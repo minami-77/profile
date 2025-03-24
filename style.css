@@ -21,7 +21,6 @@
 
 body {
   color:antiquewhite;
-   /* background-color:rgb(167, 157, 151); */
   font-family:'Courier New', Courier, monospace;
   font-size: 16px;
   line-height: 18px;
@@ -29,15 +28,20 @@ body {
 }
 
 .container {
-  background-color:blue;
+  background-color:rgb(167, 157, 151);
+  margin: 5px;
 }
 
 .card-container {
-  background-color:red;
+  background-color:rgb(167, 157, 151);
+}
+
+.header-container {
+  background-color: lightblue;
 }
 
 h1 {
-  color:lightblue;
+  color:rgb(1, 75, 99);
   font-family:'Courier New', Courier, monospace;
   font-size: 30px;
   font-weight: 800;
