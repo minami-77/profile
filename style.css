@@ -21,11 +21,19 @@
 
 body {
   color:antiquewhite;
-  background-color:rgb(167, 157, 151);
+   /* background-color:rgb(167, 157, 151); */
   font-family:'Courier New', Courier, monospace;
   font-size: 16px;
   line-height: 18px;
   text-align: center;
+}
+
+.container {
+  background-color:blue;
+}
+
+.card-container {
+  background-color:red;
 }
 
 h1 {
@@ -80,7 +88,6 @@ i:hover {
 .card-brown {
   background:rgb(122, 105, 91);
   max-width: 700px;
-  box-shadow: 15px;
   box-shadow: 3px 3px 3px rgb(97, 85, 85);
   margin: 20px auto;
   padding: 10px;
