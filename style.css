@@ -29,13 +29,6 @@ body {
 
 .container {
   width: 95%;
-  height: 95%;
-  background-color:black;
-  margin: 5px;
-
-}
-
-.card-container {
   background-color:rgb(197, 189, 184);
 }
 
