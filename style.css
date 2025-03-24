@@ -28,20 +28,36 @@ body {
 }
 
 .container {
-  background-color:rgb(167, 157, 151);
+  width: 95%;
+  height: 95%;
+  background-color:black;
   margin: 5px;
+
 }
 
 .card-container {
-  background-color:rgb(167, 157, 151);
+  background-color:rgb(197, 189, 184);
 }
 
 .header-container {
   background-color: lightblue;
 }
 
+.footer-container {
+  background-color: lightblue;
+}
+
+.card-brown {
+  background:rgb(122, 105, 91);
+  max-width: 700px;
+  box-shadow: 3px 3px 3px rgb(97, 85, 85);
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 15px;
+}
+
 h1 {
-  color:lightblue;
+  color:rgb(21, 97, 123);
   font-family:'Courier New', Courier, monospace;
   font-size: 30px;
   font-weight: 800;
@@ -89,14 +105,6 @@ i:hover {
   margin: 5px;
 }
 
-.card-brown {
-  background:rgb(122, 105, 91);
-  max-width: 700px;
-  box-shadow: 3px 3px 3px rgb(97, 85, 85);
-  margin: 20px auto;
-  padding: 10px;
-  border-radius: 15px;
-}
 
 .styled-button{
   color: antiquewhite;
