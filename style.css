@@ -37,6 +37,10 @@ body {
   background-color: lightblue;
 }
 
+.middle-container{
+  display: flex;
+}
+
 .footer-container {
   background-color: lightblue;
 }
