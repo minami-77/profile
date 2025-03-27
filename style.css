@@ -28,7 +28,6 @@ body {
 }
 
 .container {
-  width: 95%;
   background-color:rgb(197, 189, 184);
 }
 
@@ -97,7 +96,6 @@ i:hover {
   border-radius: 50%;
   margin: 5px;
 }
-
 
 .styled-button{
   color: antiquewhite;
