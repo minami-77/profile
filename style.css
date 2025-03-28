@@ -29,10 +29,17 @@ body {
 
 /* .container {
   background-color:rgb(197, 189, 184);
-} */
-.background-lightblue{
-  background-color: lightblue;
-}
+  } */
+  .background-lightblue{
+    width: 100%;
+    background-color: lightblue;
+  }
+
+  .background-beige{
+    width: 100%;
+    background-color:rgb(197, 189, 184);
+  }
+
 .header-container {
   width: 80%;
   display: flex;
@@ -51,9 +58,6 @@ body {
   }
 }
 
-.background-beige{
-  background-color:rgb(197, 189, 184);
-}
 .middle-container{
   /* background-color:rgb(197, 189, 184); */
   display: flex;
@@ -66,10 +70,10 @@ body {
   text-align: center;
 }
 
-.row{
+/* .row{
   display: flex;
   justify-content: center;
-}
+} */
 
 .card-brown {
   text-align: center;
