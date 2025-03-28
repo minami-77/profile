@@ -71,7 +71,7 @@ body {
 h1 {
   color:rgb(21, 97, 123);
   font-family:'Courier New', Courier, monospace;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 800;
   line-height: normal;
   text-align: center;
@@ -81,7 +81,7 @@ h1 {
 .darkblue {
   color:rgb(21, 97, 123);
   font-family:'Courier New', Courier, monospace;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 800;
   line-height: normal;
   text-align: center;
@@ -113,7 +113,7 @@ i:hover {
 }
 
 .img-circle {
-  width: 150px;
+  width: 120px;
   border-radius: 50%;
-  margin: 5px;
+  margin: 15px;
 }
