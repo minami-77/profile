@@ -23,13 +23,12 @@ body {
   color:antiquewhite;
   font-family:'Courier New', Courier, monospace;
   font-size: 12px;
+  margin: 0px; /* remove default margin*/
   /* line-height: 18px; */
   /* text-align: center; */
-  margin: 0px;
 }
 
 .container {
-  width: 80%;
   background-color:rgb(197, 189, 184);
 }
 
@@ -38,7 +37,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: lightblue;
-  margin-top: 10px;
 
   p{
     color: rgb(167, 157, 151);
