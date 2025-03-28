@@ -27,18 +27,43 @@ body {
   margin: 0px; /* remove default margin*/
 }
 
-/* .container {
-  background-color:rgb(197, 189, 184);
-  } */
-  .background-lightblue{
-    width: 100%;
-    background-color: lightblue;
-  }
+h1 {
+  color:rgb(21, 97, 123);
+  font-family:'Courier New', Courier, monospace;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: normal;
+  text-align: center;
+  margin: 10px;
+}
 
-  .background-beige{
-    width: 100%;
-    background-color:rgb(197, 189, 184);
+p{
+  color: rgb(167, 157, 151);
+}
+
+i {
+  font-size: 24px;
+  color: rgb(167, 157, 151);
+
+  :hover {
+    color: rgb(84, 67, 53);
   }
+}
+
+a {
+  text-decoration: none;
+  margin: 15px;
+}
+
+.background-lightblue{
+  width: 100%;
+  background-color: lightblue;
+}
+
+.background-beige{
+  width: 100%;
+  background-color:rgb(197, 189, 184);
+}
 
 .header-container {
   width: 80%;
@@ -46,14 +71,15 @@ body {
   justify-content: center;
   align-items: center;
 
-  p{
-    color: rgb(167, 157, 151);
+  h1{
+    color: rgb(84, 67, 53);
   }
-}
-.icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .middle-container{
@@ -61,18 +87,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .footer-container {
   background-color: lightblue;
   text-align: center;
 }
-
-/* .row{
-  display: flex;
-  justify-content: center;
-} */
 
 .card-brown {
   text-align: center;
@@ -83,15 +103,6 @@ body {
   border-radius: 15px;
 }
 
-h1 {
-  color:rgb(21, 97, 123);
-  font-family:'Courier New', Courier, monospace;
-  font-size: 36px;
-  font-weight: 800;
-  line-height: normal;
-  text-align: center;
-  margin: 10px;
-}
 
 .darkblue {
   color:rgb(21, 97, 123);
@@ -112,21 +123,6 @@ h1 {
   text-align: center;
   margin: 10px;
 }
-
-i {
-  font-size: 24px;
-  color: rgb(167, 157, 151);
-
-  :hover {
-    color: rgb(84, 67, 53);
-  }
-}
-
-a {
-  text-decoration: none;
-  margin: 15px;
-}
-
 
 .img-circle {
   width: 120px;
