@@ -72,7 +72,7 @@ h1 {
   margin: 10px;
 }
 
-h2 {
+.darkblue {
   color:rgb(21, 97, 123);
   font-family:'Courier New', Courier, monospace;
   font-size: 18px;
@@ -82,7 +82,7 @@ h2 {
   margin: 10px;
 }
 
-h3 {
+.lightblue {
   color:lightblue;
   font-family:'Courier New', Courier, monospace;
   font-size: 18px;
@@ -110,13 +110,4 @@ i:hover {
   width: 150px;
   border-radius: 50%;
   margin: 5px;
-}
-
-.styled-button{
-  color: antiquewhite;
-  background:rgb(84, 67, 53);
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  margin: 10px;
 }
