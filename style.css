@@ -29,6 +29,7 @@ body {
 }
 
 .container {
+  width: 80%;
   background-color:rgb(197, 189, 184);
 }
 
@@ -37,6 +38,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: lightblue;
+  margin-top: 10px;
 
   p{
     color: rgb(167, 157, 151);
@@ -50,6 +52,7 @@ body {
 }
 
 .middle-container{
+  background-color:rgb(197, 189, 184);
   /* display: flex; */
 }
 
@@ -122,4 +125,5 @@ i:hover {
   width: 120px;
   border-radius: 50%;
   margin: 15px;
+  box-shadow: 3px 3px 3px rgb(47, 41, 41);
 }
