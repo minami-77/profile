@@ -40,7 +40,7 @@ body {
 }
 
 .middle-container{
-  display: flex;
+  /* display: flex; */
 }
 
 .footer-container {
@@ -56,7 +56,7 @@ body {
 .row{
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .card-brown {
