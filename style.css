@@ -22,8 +22,6 @@
 body {
   background-color:rgb(197, 189, 184);
   margin: 0px; /* remove default margin*/
-  display: flex;
-  flex-direction: column;
   min-height: 100vh; /* 最低でも画面の高さに合わせる */
 }
 
@@ -55,7 +53,6 @@ a {
 .background-beige{
   width: 100%;
   background-color:rgb(197, 189, 184);
-  flex-grow: 1; /* 残りのスペースを埋める */
 }
 
 .header-container, .middle-container {
