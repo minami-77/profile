@@ -24,14 +24,6 @@ body {
   margin: 0px; /* remove default margin*/
 }
 
-h1 {
-  color:rgb(21, 97, 123);
-  font-family:'Courier New', Courier, monospace;
-  font-size: 36px;
-  font-weight: 800;
-  text-align: center;
-}
-
 p{
   color: rgb(84, 67, 53);
   font-family:'Courier New', Courier, monospace;
@@ -64,9 +56,18 @@ a {
 
 .header-container {
   width: 80%;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+}
+
+
+.header-container h1 {
+  color:rgb(21, 97, 123);
+  font-family:'Courier New', Courier, monospace;
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
 }
 
 .icon-container {
@@ -77,9 +78,9 @@ a {
 
 .middle-container{
   width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .footer-container {
