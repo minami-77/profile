@@ -70,8 +70,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* h1{
+    color: rgb(84, 67, 53);
+    font-weight: 800;
+  } */
 
-  h1{
+  p{
     color: rgb(84, 67, 53);
   }
 
@@ -102,7 +106,6 @@ a {
   padding: 10px;
   border-radius: 15px;
 }
-
 
 .darkblue {
   color:rgb(21, 97, 123);
