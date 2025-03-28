@@ -30,7 +30,7 @@ h1 {
   font-size: 36px;
   font-weight: 800;
   text-align: center;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 p{
@@ -97,17 +97,17 @@ a {
   border-radius: 15px;
 }
 
-.card-brown:h2 {
+.card-brown h2 {
   color:lightblue;
   font-family:'Courier New', Courier, monospace;
   font-size: 20px;
   font-weight: 800;
   /* line-height: normal; */
   text-align: center;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
-.card-brown:p {
+.card-brown p {
   color: antiquewhite;
 }
 
@@ -118,12 +118,12 @@ a {
   font-weight: 800;
   /* line-height: normal; */
   text-align: center;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 .img-circle {
   width: 120px;
   border-radius: 50%;
-  margin: 15px;
+  /* margin: 15px; */
   box-shadow: 3px 3px 3px rgb(47, 41, 41);
 }
