@@ -54,8 +54,9 @@ a {
   background-color:rgb(197, 189, 184);
 }
 
-.header-container {
+.header-container, .middle-container {
   width: 80%;
+  margin: 0 auto; /* 左右中央に配置 */
 }
 
 .header-container h1 {
@@ -71,10 +72,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.middle-container{
-  width: 80%;
 }
 
 .footer-container {
