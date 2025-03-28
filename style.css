@@ -37,6 +37,16 @@ body {
   justify-content: center;
   align-items: center;
   background-color: lightblue;
+
+  p{
+    color: rgb(167, 157, 151);
+  }
+
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .middle-container{
@@ -45,12 +55,7 @@ body {
 
 .footer-container {
   background-color: lightblue;
-}
-
-.icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .row{
@@ -60,9 +65,10 @@ body {
 }
 
 .card-brown {
+  text-align: center;
   background:rgb(122, 105, 91);
-  max-width: 700px;
-  box-shadow: 3px 3px 3px rgb(97, 85, 85);
+  /* max-width: 700px; */
+  box-shadow: 3px 3px 3px rgb(47, 41, 41);
   margin: 30px;
   padding: 10px;
   border-radius: 15px;
@@ -99,7 +105,7 @@ h1 {
 }
 
 i {
-  font-size: 40px;
+  font-size: 24px;
   color: rgb(167, 157, 151);
 }
 
