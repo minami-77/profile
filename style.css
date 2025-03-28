@@ -45,24 +45,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: lightblue; */
 
   p{
     color: rgb(167, 157, 151);
   }
-
-  .icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+}
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .middle-container{
-  /* background-color:rgb(197, 189, 184); */
+  width: 80%;
   display: flex;
   justify-content: center;
-  width: 80%;
+  align-items: center;
+
 }
 
 .footer-container {
@@ -117,6 +116,10 @@ h1 {
 i {
   font-size: 24px;
   color: rgb(167, 157, 151);
+
+  :hover {
+    color: rgb(84, 67, 53);
+  }
 }
 
 a {
@@ -124,9 +127,6 @@ a {
   margin: 15px;
 }
 
-i:hover {
-  color: rgb(84, 67, 53);
-}
 
 .img-circle {
   width: 120px;
