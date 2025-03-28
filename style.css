@@ -20,9 +20,6 @@
 }
 
 body {
-  color:antiquewhite;
-  font-family:'Courier New', Courier, monospace;
-  font-size: 12px;
   background-color:rgb(197, 189, 184);
   margin: 0px; /* remove default margin*/
 }
@@ -32,22 +29,23 @@ h1 {
   font-family:'Courier New', Courier, monospace;
   font-size: 36px;
   font-weight: 800;
-  line-height: normal;
   text-align: center;
   margin: 10px;
 }
 
-p {
-  color: antiquewhite;
+p{
+  color: rgb(84, 67, 53);
+  font-family:'Courier New', Courier, monospace;
+  font-size: 12px;
 }
 
 i {
   font-size: 24px;
   color: rgb(167, 157, 151);
+}
 
-  :hover {
-    color: rgb(84, 67, 53);
-  }
+i:hover {
+  color: rgb(84, 67, 53);
 }
 
 a {
@@ -70,20 +68,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* h1{
-    color: rgb(84, 67, 53);
-    font-weight: 800;
-  } */
+}
 
-  p{
-    color: rgb(84, 67, 53);
-  }
-
-  .icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .middle-container{
@@ -107,22 +97,26 @@ a {
   border-radius: 15px;
 }
 
+.card-brown:h2 {
+  color:lightblue;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: 800;
+  /* line-height: normal; */
+  text-align: center;
+  margin: 10px;
+}
+
+.card-brown:p {
+  color: antiquewhite;
+}
+
 .darkblue {
   color:rgb(21, 97, 123);
   font-family:'Courier New', Courier, monospace;
   font-size: 24px;
   font-weight: 800;
-  line-height: normal;
-  text-align: center;
-  margin: 10px;
-}
-
-.lightblue {
-  color:lightblue;
-  font-family:'Courier New', Courier, monospace;
-  font-size: 20px;
-  font-weight: 800;
-  line-height: normal;
+  /* line-height: normal; */
   text-align: center;
   margin: 10px;
 }
