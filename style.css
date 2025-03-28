@@ -27,15 +27,18 @@ body {
   margin: 0px; /* remove default margin*/
 }
 
-.container {
+/* .container {
   background-color:rgb(197, 189, 184);
+} */
+.background-lightblue{
+  background-color: lightblue;
 }
-
 .header-container {
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightblue;
+  /* background-color: lightblue; */
 
   p{
     color: rgb(167, 157, 151);
@@ -48,9 +51,13 @@ body {
   }
 }
 
-.middle-container{
+.background-beige{
   background-color:rgb(197, 189, 184);
-  /* display: flex; */
+}
+.middle-container{
+  /* background-color:rgb(197, 189, 184); */
+  display: flex;
+  width: 80%;
 }
 
 .footer-container {
@@ -60,6 +67,7 @@ body {
 
 .row{
   display: flex;
+  width: 80%;
   justify-content: center;
 }
 
