@@ -42,7 +42,11 @@ i:hover {
 
 a {
   text-decoration: none;
-  padding: 0px 15px;
+  /* padding: 0px 15px; */
+}
+
+a:hover {
+  color:rgb(21, 97, 123);
 }
 
 .background-banner {
