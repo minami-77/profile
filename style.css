@@ -47,10 +47,10 @@ a {
 }
 
 .card-category {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(images/default-pic.jpeg);
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(images/16-9.JPG);
   background-size: cover;
-  background-position: center;
-  height: 180px;
+  background-position:center;
+  height: 200px;
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -116,6 +116,10 @@ a {
 
 .card-brown p {
   color: antiquewhite;
+}
+
+.card-brown img {
+  border-radius: 10px;
 }
 
 .darkblue {
