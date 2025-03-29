@@ -51,9 +51,9 @@ a {
   background-size: cover;
   background-position: center;
   height: 180px;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   color: white;
   font-size: 24px;
   font-weight: bold;
