@@ -85,20 +85,20 @@ a {
   text-align: center;
   padding-top: 20px;
 }
-
+/*
 .icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
+} */
+/*
 .footer-container {
   background-color: lightblue;
   text-align: center;
-}
+} */
 
 .footer {
-  background: #F4F4F4;
+  background-color: lightblue;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -110,7 +110,7 @@ a {
   display: flex;
   align-items: center;
 }
-.footer-links a {
+/* .footer-links a {
   color: black;
   opacity: 0.15;
   text-decoration: none;
@@ -119,10 +119,7 @@ a {
 }
 .footer-links a:hover {
   opacity: 1;
-}
-.footer .fa-heart {
-  color: #D23333;
-}
+} */
 
 .card-brown {
   text-align: center;
