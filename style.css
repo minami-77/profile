@@ -22,7 +22,7 @@
 body {
   background-color:rgb(197, 189, 184);
   margin: 0px; /* remove default margin*/
-  min-height: 100vh; /* 最低でも画面の高さに合わせる */
+  /* min-height: 100vh; 最低でも画面の高さに合わせる */
 }
 
 p{
