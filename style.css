@@ -52,7 +52,6 @@ h2:hover {
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(images/16-9.JPG);
   background-size: cover;
   background-position:top;
-  height: 240px;
   color: white;
   font-size: 24px;
   font-weight: bold;
