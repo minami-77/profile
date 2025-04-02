@@ -101,7 +101,7 @@ h2:hover {
   color:lightblue;
   font-family:'Courier New', Courier, monospace;
   font-size: 20px;
-  font-weight: 800;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -119,14 +119,27 @@ h2:hover {
   margin: 10px auto;
 }
 
-.darkblue {
+.white {
   color:antiquewhite;
+  font-family: Arial, Helvetica, sans-serif;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-family:'Courier New', Courier, monospace;
   font-size: 24px;
-  font-weight: 800;
+  font-weight: bold;
   text-align: center;
   padding-top: 15px;
+}
+
+.small-white {
+  font-size: 10px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: antiquewhite;
+  background-color:  rgb(84, 67, 53);
+  display: inline; /* 背景を文字の幅に合わせる */
+  padding: 2px 5px; /* 少し余白をつけると見やすい */
+  border-radius: 5px; /* 角を丸くする（任意） */
+
 }
 
 .img-circle {
