@@ -104,6 +104,12 @@ h2:hover {
   background-color: antiquewhite;
 }
 
+.btn-container {
+  display: flex;
+  justify-content: end;
+  padding: 15px 15px 0px 15px;
+}
+
 .card-brown {
   text-align: center;
   background:rgb(122, 105, 91);
