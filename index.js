@@ -8,7 +8,7 @@ buttonJp.addEventListener("click", (event) => {
   event.preventDefault();
   console.log("clicked");
   english.style.display = "none";
-  japanese.style.display = "block";
+  japanese.classList.remove("d-none");
   // ページ遷移
   // window.location.href = '/index_jp.html';
 })

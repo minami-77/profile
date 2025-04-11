@@ -104,7 +104,8 @@ a {
 .btn-container {
   display: flex;
   justify-content: end;
-  padding: 15px 15px 0px 15px; /*上右下左*/
+  padding: 0px 15px; /*上右下左*/
+  background-color:lightblue;
 }
 
 .category-title {
