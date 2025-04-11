@@ -24,7 +24,7 @@ body {
 }
 
 .background-banner {
-  background-image: linear-gradient(rgba(69, 119, 134, 0.2), rgba(131, 220, 250, 0.1)),url(images/16-9.JPG);
+  background-image: linear-gradient(rgba(64, 120, 137, 0.2), rgba(131, 220, 250, 0.1)),url(images/16-9.JPG);
   background-size: cover;
   background-position:top;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
