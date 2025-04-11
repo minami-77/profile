@@ -178,7 +178,6 @@ a {
 }
 
 .footer {
-  width: 80%;
   background-color: lightblue;
   display: flex;
   align-items: center;
@@ -186,6 +185,15 @@ a {
   height: 100px;
   padding: 0px 50px;
   color: rgba(0,0,0,0.3);
+}
+
+.footer-container {
+  width: 80%;
+  margin: 0 auto; /* 左右中央に配置 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
 .footer-links {
   display: flex;
@@ -197,6 +205,6 @@ a {
 }
 
 .icon-brown {
-  font-size: 24px;
+  font-size: 32px;
   color: rgb(122, 105, 91);
 }
