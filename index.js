@@ -16,7 +16,7 @@ buttonJp.addEventListener("click", (event) => {
 buttonEn.addEventListener("click", (event) => {
   event.preventDefault();
   console.log("clicked");
-  japanese.style.display = "none";
+  japanese.classList.add("d-none");
   english.style.display = "block";
   // ページ遷移
   // window.location.href = '/index_en.html';
