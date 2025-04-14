@@ -23,15 +23,18 @@ body {
   margin: 0px; /* remove default margin*/
 }
 
+/* Navbar */
+
+/* Language-Button */
 .btn-container {
   display: flex;
   justify-content: end;
-  padding: 0px 15px; /*上右下左*/
+  padding: 0px 15px;
   background-color:lightblue;
 }
 
 .btn-lang {
-  font-size: 10px;
+  font-size: 1rem;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(84, 67, 53);
@@ -46,33 +49,100 @@ body {
   background-color: antiquewhite;
 }
 
+/* Banner */
 .background-banner {
   background-image: linear-gradient(rgba(64, 120, 137, 0.2), rgba(131, 220, 250, 0.1)),url(images/16-9.JPG);
   background-size: cover;
   background-position:top;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  height: 100vh;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.eng-white{
+  font-size: 3.5rem;
+  color: white !important;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold !important;
+  text-shadow: 5px 5px 10px rgb(44, 89, 104);
+  animation-duration: 2s;
+  animation-name: slidein;
+  padding: 1rem;
+
+}
+
+.jp-white{
+  font-size: 3rem;
+  color: white !important;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold !important;
+  text-shadow: 5px 5px 10px rgb(44, 89, 104);
+  animation-duration: 2s;
+  animation-name: slidein;
+  padding: 1rem;
+}
+
+.eng-brown{
+  color: rgb(84, 67, 53);
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  margin: 0px;
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  padding: 1rem;
+}
+
+.jp-brown{
+  color: rgb(84, 67, 53);
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  margin: 0px;
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  padding: 1rem;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .img-circle {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   box-shadow: 4px 4px 12px rgb(0, 0, 0, 0.5);
+  opacity: 0; /* 初期状態は非表示 */
+  animation: fadein 1s ease-in forwards;
+  animation-delay: 1s;
+  margin: 1rem;
 }
 
-i {
-  font-size: 16px;
-  color: lightblue;
-}
-
-i:hover {
-  color: rgb(84, 67, 53);
-}
 
 a {
   text-decoration: none !important;
 }
 
+/* Contents */
 .background-beige{
   width: 100%;
   background-color:rgb(229 220 214);
@@ -83,13 +153,12 @@ a {
   margin: 0 auto; /* 左右中央に配置 */
 }
 
-
 .category-title {
   font-family:'Courier New', Courier, monospace;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2rem;
   color: rgb(84, 67, 53);
-  /* color: rgb(113, 191, 218); */
+  text-shadow: 5px 5px 10px rgb(0,0,0,0.5);
 }
 
 .card-brown {
@@ -103,7 +172,7 @@ a {
 .card-brown h2 {
   color:lightblue;
   font-family:'Courier New', Courier, monospace;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   text-align: center;
@@ -114,28 +183,35 @@ a {
   color: rgb(84, 67, 53);
 }
 
-.card-brown p {
-  color: antiquewhite;
-  margin: 0px;
+i {
+  font-size: 1rem;
+  color: lightblue;
 }
+
+i:hover {
+  color: rgb(84, 67, 53);
+}
+
 
 .card-brown img {
   border-radius: 15px;
   border: 1px solid antiquewhite;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
   width: 100%;
-  height: 120px;
+  height: 200px;
   object-fit: cover;
   margin: 10px auto;
 }
 
-.small-text{
-  font-size: 10px;
+.card-brown p {
+  color: antiquewhite;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin: 0px;
 }
 
 .small-brown {
-  font-size: 10px;
+  font-size: 0.7rem;
   font-family: Arial, Helvetica, sans-serif;
   background-color:  rgb(84, 67, 53);
   display: inline; /* 背景を文字の幅に合わせる */
@@ -144,18 +220,12 @@ a {
   /* border:1px solid antiquewhite ; */
 }
 
-
-.white {
-  color:white;
+.small-text{
+  font-size: 0.7rem;
   font-family: Arial, Helvetica, sans-serif;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-family:'Courier New', Courier, monospace;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 15px;
 }
 
+/* Footer */
 .footer {
   background-color: lightblue;
   display: flex;
@@ -184,60 +254,6 @@ a {
 }
 
 .icon-brown {
-  font-size: 32px;
+  font-size: 2rem;
   color: rgb(122, 105, 91);
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-.eng-white{
-  color: white !important;
-  font-family:'Courier New', Courier, monospace;
-  font-weight: bold !important;
-  text-shadow: 5px 5px 10px rgb(44, 89, 104);
-  animation-duration: 2s;
-  animation-name: slidein;
-
-}
-
-.jp-white{
-  color: white !important;
-  font-family:Arial, Helvetica, sans-serif;
-  font-weight: bold !important;
-  text-shadow: 5px 5px 10px rgb(44, 89, 104);
-  animation-duration: 2s;
-  animation-name: slidein;
-
-}
-
-.eng-brown{
-  color: rgb(84, 67, 53);
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  margin: 0px;
-  animation-duration: 2s;
-  animation-name: slidein;
-  animation-delay: 1s;
-  animation-fill-mode: both;
-}
-
-.jp-brown{
-  color: rgb(84, 67, 53);
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  margin: 0px;
-  animation-duration: 2s;
-  animation-name: slidein;
-  animation-delay: 1s;
-  animation-fill-mode: both;
 }
