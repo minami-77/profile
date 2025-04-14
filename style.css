@@ -60,27 +60,6 @@ body {
   box-shadow: 4px 4px 12px rgb(0, 0, 0, 0.5);
 }
 
-.eng-white{
-  color: white !important;
-  font-family:'Courier New', Courier, monospace;
-  font-weight: bold !important;
-  text-shadow: 5px 5px 10px rgb(44, 89, 104);
-}
-
-.jp-white{
-  color: white !important;
-  font-family:Arial, Helvetica, sans-serif;
-  font-weight: bold !important;
-  text-shadow: 5px 5px 10px rgb(44, 89, 104);
-}
-
-p{
-  color: rgb(84, 67, 53);
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  margin: 0px;
-}
-
 i {
   font-size: 16px;
   color: lightblue;
@@ -207,4 +186,58 @@ a {
 .icon-brown {
   font-size: 32px;
   color: rgb(122, 105, 91);
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.eng-white{
+  color: white !important;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold !important;
+  text-shadow: 5px 5px 10px rgb(44, 89, 104);
+  animation-duration: 2s;
+  animation-name: slidein;
+
+}
+
+.jp-white{
+  color: white !important;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold !important;
+  text-shadow: 5px 5px 10px rgb(44, 89, 104);
+  animation-duration: 2s;
+  animation-name: slidein;
+
+}
+
+.eng-brown{
+  color: rgb(84, 67, 53);
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin: 0px;
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+.jp-brown{
+  color: rgb(84, 67, 53);
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin: 0px;
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-delay: 1s;
+  animation-fill-mode: both;
 }
