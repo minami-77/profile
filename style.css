@@ -24,34 +24,61 @@ body {
 }
 
 /* Navbar */
-
-/* Language-Button */
-.btn-container {
+.navbar{
+  height: 4rem;
+  background-color:rgb(88, 130, 145);
   display: flex;
-  justify-content: end;
-  padding: 0px 15px;
-  background-color:lightblue;
+  justify-content: end !important;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+
+.tabs-underlined {
+  display: flex;
+  align-items: center;
+}
+
+.tabs-underlined .tab-underlined {
+  color: white;
+  font-size: 1.25rem;
+  padding: 8px;
+  margin: 8px;
+  opacity: .4;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
+}
+
+.tabs-underlined .tab-underlined.active {
+  opacity: 1;
+  border-bottom: 3px solid #555555;
 }
 
 .btn-lang {
   font-size: 1rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(84, 67, 53);
-  background-color:  white;
-  border: 2px solid rgb(84, 67, 53) ;
+  color: white;
+  background-color: rgb(84, 67, 53);
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
   display: inline; /* 背景を文字の幅に合わせる */
   padding: 2px 5px; /* 少し余白をつけると見やすい */
   border-radius: 5px; /* 角を丸くする（任意） */
 }
 
 .btn-lang:hover{
-  background-color: antiquewhite;
+  color: rgb(84, 67, 53);
+  background-color:  rgb(255,255,255,0.8);
+}
+
+.btn-lang.active{
+  color: rgb(84, 67, 53);
+  background-color:  rgb(255,255,255,0.8);
 }
 
 /* Banner */
 .background-banner {
-  background-image: linear-gradient(rgba(64, 120, 137, 0.2), rgba(131, 220, 250, 0.1)),url(images/16-9.JPG);
+  background-image: linear-gradient(rgba(64, 120, 137, 0.3), rgba(131, 220, 250, 0.1)),url(images/16-9.JPG);
   background-size: cover;
   background-position:top;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
@@ -79,7 +106,6 @@ body {
   animation-duration: 2s;
   animation-name: slidein;
   padding: 1rem;
-
 }
 
 .jp-white{
@@ -93,32 +119,6 @@ body {
   padding: 1rem;
 }
 
-.eng-brown{
-  color: rgb(84, 67, 53);
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  text-shadow: 5px 5px 10px rgb(0,0,0,0.5);
-  margin: 0px;
-  animation-duration: 2s;
-  animation-name: slidein;
-  animation-delay: 1s;
-  animation-fill-mode: both;
-  padding: 1.5rem;
-}
-
-.jp-brown{
-  color: rgb(84, 67, 53);
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  text-shadow: 5px 5px 10px rgb(0,0,0,0.5);
-  margin: 0px;
-  animation-duration: 2s;
-  animation-name: slidein;
-  animation-delay: 1s;
-  animation-fill-mode: both;
-  padding: 1.5rem;
-}
-
 @keyframes fadein {
   from {
     opacity: 0;
@@ -126,6 +126,42 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.large-eng-brown{
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(84, 67, 53);
+  text-shadow: 5px 5px 10px rgb(0,0,0,0.5);
+  padding-bottom: 1rem;
+  opacity: 0; /* 初期状態は非表示 */
+  animation: fadein 2s ease-in forwards;
+  animation-delay: 2s;
+}
+
+.eng-brown{
+  color: rgb(84, 67, 53);
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  text-shadow: 1px 1px 3px rgb(0,0,0,0.5);
+  margin: 0px;
+  opacity: 0; /* 初期状態は非表示 */
+  animation: fadein 2s ease-in forwards;
+  animation-delay: 2s;
+}
+
+.jp-brown{
+  color: rgb(84, 67, 53);
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  text-shadow: 1px 1px 5px rgb(0,0,0,0.5);
+  margin: 0px;
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  padding: 1.5rem;
 }
 
 .img-circle {
@@ -136,19 +172,42 @@ body {
   opacity: 0; /* 初期状態は非表示 */
   animation: fadein 2s ease-in forwards;
   animation-delay: 2s;
-  margin: 1.5rem;
+  margin: 1rem;
 }
 
-.skill-img{
-  width: 5rem;
-  height: auto;
-  padding: 0 0.5rem;
+.contact-container{
+  background-color: rgb(255,255,255,0.3);
+  display: inline-block;
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 15px;
+  opacity: 0; /* 初期状態は非表示 */
+  animation: fadein 2s ease-in forwards;
+  animation-delay: 2s;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-brown {
+  font-size: 2.5rem;
+  color:rgb(84, 67, 53);
+  text-shadow: 5px 5px 10px rgb(0,0,0,0.5);
+  margin: 0px 2rem;
+}
+
+.icon-brown:hover{
+  color: white;
+  text-shadow: 5px 5px 10px rgb(44, 89, 104);
 }
 
 /* Contents */
 .background-beige{
   width: 100%;
-  background-color:rgb(229 220 214);
+  background-color:rgb(243, 235, 230);
 }
 
 .middle-container {
@@ -162,21 +221,39 @@ body {
   font-size: 2rem;
   color: rgb(84, 67, 53);
   text-shadow: 5px 5px 10px rgb(0,0,0,0.5);
-  padding: 5rem 0rem 3rem 0rem;
+}
+
+.my-skill-container{
+  padding: 3rem 0rem 2rem 0rem;
+}
+
+.skill-img-container{
+  padding: 2rem 0rem;
+
+}
+
+.skill-img{
+  width: 5rem;
+  height: auto;
+  padding: 0 0.5rem;
+}
+
+.my-works-container{
+  padding: 3rem 0rem 2rem 0rem;
 }
 
 .card-brown {
   background:rgb(122, 105, 91);
   box-shadow: 4px 4px 12px rgb(0, 0, 0, 0.5);
-  margin: 10px 20px;
-  padding: 16px;
+  margin: 3rem;
+  padding: 2rem;
   border-radius: 15px;
 }
 
 .card-brown h2 {
   color:lightblue;
   font-family:'Courier New', Courier, monospace;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   text-align: center;
@@ -184,7 +261,6 @@ body {
 }
 
 .card-brown h2:hover {
-  /* color:rgb(21, 97, 123) !important; */
   color: rgb(84, 67, 53);
 }
 
@@ -212,14 +288,14 @@ a {
 }
 
 .card-text {
-  color: antiquewhite;
+  color: rgb(255,255,255,0.8);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   margin: 0px;
 }
 
 .small-text{
-  color: antiquewhite;
+  color: rgb(255,255,255,0.8);
   font-size: 0.8rem;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -230,39 +306,23 @@ a {
 
 .devicon{
   font-size: 2rem;
-  color: rgb(157, 176, 183);
+  /* color: rgb(112, 152, 166); */
+  color: rgb(255,255,255,0.8);
   text-shadow: 5px 5px 10px rgb(0,0,0,0.5);
 }
 
 /* Footer */
 .footer {
-  background-color: lightblue;
+  background-color:rgb(88, 130, 145);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   height: 100px;
   padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
+  color: rgb(255,255,255,0.8);
 }
 
 .footer-container {
   width: 80%;
   margin: 0 auto; /* 左右中央に配置 */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-}
-.footer-links {
-  display: flex;
-  align-items: center;
-}
-
-.footer-links a {
-  margin: 0px 15px;
-}
-
-.icon-brown {
-  font-size: 2rem;
-  color: rgb(122, 105, 91);
 }
