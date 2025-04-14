@@ -17,19 +17,19 @@
       <div class="tabs-container">
         <ul class="list-inline tabs-underlined d-flex">
           <li>
-            <a href="#" class="tab-underlined active">Contact</a>
+            <a href="#contact" id="tab-contact" class="tab-underlined">Contact</a>
           </li>
           <li>
-            <a href="#" class="tab-underlined">Skills</a>
+            <a href="#skills" id="tab-skills" class="tab-underlined">Skills</a>
           </li>
           <li>
-            <a href="#" class="tab-underlined">Projects</a>
+            <a href="#projects" id="tab-projects" class="tab-underlined">Projects</a>
           </li>
         </ul>
 
       </div>
       <div class="btn-container">
-        <button id="btn-en" class="btn-lang">
+        <button id="btn-en.active" class="btn-lang">
           English
         </button>
         <button id="btn-jp" class="btn-lang">
@@ -40,7 +40,7 @@
 
     <!-- ENGLISH -->
     <div class="english">
-      <div class="background-banner d-flex flex-column justify-content-center align-item-center">
+      <div id="top" class="background-banner d-flex flex-column justify-content-center align-item-center">
         <h1 class="eng-white text-center">Minami Takayama</h1>
         <h2 class="large-eng-brown text-center">
           Bilingual Full Stack Programmer
@@ -53,7 +53,7 @@
         <div class="d-flex justify-content-center align-item-center">
           <img src="images/20250307_DemoDay-24-face.JPG" class="img-circle">
         </div>
-        <div class="contact-container">
+        <div id="contact" class="contact-container">
           <h2 class="category-title d-flex justify-content-center">
             Contact
           </h2>
@@ -73,12 +73,12 @@
 
       <div class="background-beige p-3">
         <div class="middle-container">
-          <div class="my-skill-container">
+          <div id="skills" class="my-skill-container">
             <h2 class="category-title d-flex justify-content-center">
               Skills
             </h2>
             <div class="row">
-              <div class="skill-img-container d-flex justify-content-center">
+              <div class="skill-img-container">
                 <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
                 <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
                 <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" />
@@ -93,7 +93,7 @@
               </div>
             </div>
           </div>
-          <div class="my-works-container">
+          <div id="projects" class="my-works-container">
             <h2 class="category-title d-flex justify-content-center">
               Projects
             </h2>
@@ -156,6 +156,7 @@
               </div>
             </div>
           </div>
+          <a href="#top" class="back-to-top text-center">↑</a>
         </div>
       </div>
     </div>
