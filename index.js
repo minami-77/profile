@@ -2,7 +2,7 @@ const buttonJp = document.querySelector('#btn-jp');
 const buttonEn = document.querySelector('#btn-en');
 const japanese = document.querySelector('.japanese');
 const english = document.querySelector('.english');
-const tabContact = document.querySelector('#tab-contact');
+const tabProfile = document.querySelector('#tab-profile');
 const tabSkills = document.querySelector('#tab-skills');
 const tabProjects = document.querySelector('#tab-projects');
 // const contact = document.querySelector('#contact');
@@ -32,10 +32,10 @@ buttonEn.addEventListener("click", (event) => {
   // window.location.href = '/index_en.html';
 })
 
-tabContact.addEventListener("click", (event) => {
+tabProfile.addEventListener("click", (event) => {
   // event.preventDefault();
   console.log("clicked");
-  tabContact.classList.add("active");
+  tabProfile.classList.add("active");
   tabSkills.classList.remove("active");
   tabProjects.classList.remove("active");
 })
@@ -44,7 +44,7 @@ tabContact.addEventListener("click", (event) => {
 tabSkills.addEventListener("click", (event) => {
   // event.preventDefault();
   console.log("clicked");
-  tabContact.classList.remove("active");
+  tabProfile.classList.remove("active");
   tabSkills.classList.add("active");
   tabProjects.classList.remove("active");
 })
@@ -52,7 +52,7 @@ tabSkills.addEventListener("click", (event) => {
 tabProjects.addEventListener("click", (event) => {
   // event.preventDefault();
   console.log("clicked");
-  tabContact.classList.remove("active");
+  tabProfile.classList.remove("active");
   tabSkills.classList.remove("active");
   tabProjects.classList.add("active");
 })

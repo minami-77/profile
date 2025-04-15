@@ -13,15 +13,12 @@
 
   <body>
     <!-- Navbar -->
-    <div class="navbar d-flex">
+    <div class="navbar">
       <div class="tabs-container">
-        <ul class="list-inline tabs-underlined d-flex">
+        <ul class="list-inline tabs-underlined">
           <li>
-            <a href="#top" id="tab-contact" class="tab-underlined">Profile</a>
+            <a href="#top" id="tab-profile" class="tab-underlined">Profile</a>
           </li>
-          <!-- <li>
-            <a href="#contact" id="tab-contact" class="tab-underlined">Contact</a>
-          </li> -->
           <li>
             <a href="#skills" id="tab-skills" class="tab-underlined">Skills</a>
           </li>
@@ -31,11 +28,11 @@
         </ul>
       </div>
       <div class="btn-container">
-        <button id="btn-en" class="btn-lang">
-          English
+        <button id="btn-en" class="btn-lang active">
+          EN
         </button>
         <button id="btn-jp" class="btn-lang">
-          日本語
+          日
         </button>
       </div>
     </div>
@@ -43,37 +40,38 @@
     <!-- ENGLISH -->
     <div class="english">
       <div id="top" class="background-banner d-flex flex-column justify-content-center align-item-center">
-        <h1 class="eng-white text-center">Minami Takayama</h1>
-        <h2 class="large-eng-brown text-center">
-          Full Stack Programmer
-        </h2>
-        <p class="eng-brown text-center">
-          Hi, I'm Minami from Japan. I'm aiming to develop professional coding skills and make a career change.
-          <br>I like classical music, art, reading, coffee, traveling!
-        </p>
-
-        <div class="d-flex justify-content-center align-item-center">
-          <img src="images/20250307_DemoDay-24-face.JPG" class="img-circle">
-        </div>
-        <div id="contact" class="contact-container">
-          <h2 class="category-title d-flex justify-content-center">
-            Contact
+        <div class="profile-container">
+          <h1 class="eng-white text-center">Minami Takayama</h1>
+          <h2 class="large-eng-brown text-center">
+            Full Stack Programmer
           </h2>
-          <div class="contact-links">
-            <a href="https://www.linkedin.com/in/minami-t-46b56b233" target="_blank">
-              <i class="icon-brown  fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/minami-t-46b56b233" target="_blank">
-              <i class="icon-brown  fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/minami-77">
-              <i class="icon-brown fa-brands fa-github"></i>
-            </a>
+          <p class="eng-brown text-center">
+            Hi, I'm Minami from Japan. I'm aiming to develop professional coding skills and make a career change.
+            <br>I like classical music, art, reading, coffee, traveling!
+          </p>
+          <div class="d-flex justify-content-center align-item-center">
+            <img src="images/20250307_DemoDay-24-face.JPG" class="img-circle">
+          </div>
+          <div id="contact" class="contact-container">
+            <h2 class="large-eng-brown text-center">
+              Contact
+            </h2>
+            <div class="contact-links">
+              <a href="mailto:m.inam.ina03037@gmail.com">
+                <i class="icon-brown fa-solid fa-envelope"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/minami-t-46b56b233" target="_blank">
+                <i class="icon-brown  fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/minami-77">
+                <i class="icon-brown fa-brands fa-github"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="background-beige p-3">
+      <div class="background-beige">
         <div class="middle-container">
           <div id="skills" class="my-skill-container">
             <h2 class="category-title d-flex justify-content-center">
@@ -90,11 +88,13 @@
                   <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
                   <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
                 </div>
+                <hr style="border-top: 3px dashed rgb(88, 130, 145);">
                 <h3 class="eng-blue text-center">Backend</h3>
                 <div class="skill-category">
                   <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original-wordmark.svg" />
                   <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg" />
                 </div>
+                <hr style="border-top: 3px dashed rgb(88, 130, 145);">
                 <h3 class="eng-blue text-center">Others</h3>
                 <div class="skill-category">
                   <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg" />
@@ -110,9 +110,9 @@
       </div>
 
       <!-- Projects -->
-      <div class="background-beige p-3">
+      <div class="background-beige">
         <div class="middle-container">
-          <div id="projects" class="my-works-container">
+          <div id="projects" class="projects-container">
             <h2 class="category-title d-flex justify-content-center">
               Projects
             </h2>
