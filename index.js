@@ -10,6 +10,11 @@ const tabProjects = document.querySelector('#tab-projects');
 // const projects = document.querySelector('#projects');
 
 
+// 日本語対応していない
+
+
+
+
 buttonJp.addEventListener("click", (event) => {
   event.preventDefault();
   console.log("clicked");
