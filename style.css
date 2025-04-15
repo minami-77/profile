@@ -60,6 +60,9 @@ body {
   border-bottom: 3px solid #555555;
 }
 
+.btn-container{
+  margin: 0rem 1.25rem 1rem 1.25rem;
+}
 .btn-lang {
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
@@ -67,8 +70,9 @@ body {
   background-color: rgb(84, 67, 53);
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
   display: inline; /* 背景を文字の幅に合わせる */
-  padding: 2px 5px; /* 少し余白をつけると見やすい */
+  padding: 5px 5px; /* 少し余白をつけると見やすい */
   border-radius: 5px; /* 角を丸くする（任意） */
+  /* margin-bottom: 1rem; */
 }
 
 .btn-lang:hover{
@@ -86,7 +90,7 @@ body {
   background-image: linear-gradient(rgba(64, 120, 137, 0.3), rgba(131, 220, 250, 0.1)),url(images/16-9.JPG);
   background-size: cover;
   background-position:top;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  /* box-shadow: 0 0 20px rgba(0,0,0,0.2); */
   height: 100vh;
 }
 
@@ -103,7 +107,7 @@ body {
 }
 
 .eng-white{
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: white !important;
   font-family:'Courier New', Courier, monospace;
   font-weight: bold !important;
@@ -136,7 +140,7 @@ body {
 .large-eng-brown{
   font-family:'Courier New', Courier, monospace;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: rgb(84, 67, 53);
   text-shadow: 5px 5px 10px rgb(0,0,0,0.5);
   padding-bottom: 1rem;
@@ -148,7 +152,7 @@ body {
 .eng-brown{
   color: rgb(84, 67, 53);
   font-family:Arial, Helvetica, sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-shadow: 1px 1px 3px rgb(0,0,0,0.5);
   margin: 0px;
   opacity: 0; /* 初期状態は非表示 */
@@ -157,16 +161,7 @@ body {
 }
 
 .jp-brown{
-  color: rgb(84, 67, 53);
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 1.25rem;
-  text-shadow: 1px 1px 5px rgb(0,0,0,0.5);
-  margin: 0px;
-  animation-duration: 2s;
-  animation-name: slidein;
-  animation-delay: 1s;
-  animation-fill-mode: both;
-  padding: 1.5rem;
+
 }
 
 .img-circle {
@@ -177,15 +172,18 @@ body {
   opacity: 0; /* 初期状態は非表示 */
   animation: fadein 2s ease-in forwards;
   animation-delay: 2s;
-  margin: 1rem;
+  margin: 1.5rem;
 }
 
+/* Contact */
 .contact-container{
-  background-color: rgb(255,255,255,0.3);
+  width: 50%;
+  margin: 2rem auto; /* 左右中央に配置 */
+  background-color: rgb(255,255,255,0.2);
   display: inline-block;
   padding: 1rem;
-  margin: 0 auto;
-  border-radius: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
   opacity: 0; /* 初期状態は非表示 */
   animation: fadein 2s ease-in forwards;
   animation-delay: 2s;
@@ -205,14 +203,14 @@ body {
 }
 
 .icon-brown:hover{
-  color: white;
+  color: rgb(116, 170, 188);
   text-shadow: 5px 5px 10px rgb(44, 89, 104);
 }
 
-/* Contents */
+/* Skills */
 .background-beige{
   width: 100%;
-  background-color:rgb(243, 235, 230);
+  background:linear-gradient(rgb(202, 197, 193, 0.8), rgba(202, 197, 193, 0.4));
 }
 
 .middle-container {
@@ -223,28 +221,51 @@ body {
 .category-title {
   font-family:'Courier New', Courier, monospace;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: rgb(84, 67, 53);
   text-shadow: 5px 5px 10px rgb(0,0,0,0.5);
+  margin-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .my-skill-container{
-  padding: 3rem 0rem 2rem 0rem;
+  padding: 2rem 0rem;
 }
 
+.eng-blue{
+  background-color: rgb(88, 130, 145);
+  color: white;
+  font-size: 1rem;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
 .skill-img-container{
+  width: 90%;
+  padding: 2rem 0rem;
+  background-color: rgb(255,255,255,0.4);
+  display: inline-block;
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.skill-category{
   padding: 2rem 0rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
 }
 
 .skill-img{
-  width: 5rem;
+  width: 3rem;
   height: auto;
   margin: 0.5rem;
 }
+
+/* Projects */
 
 .my-works-container{
   padding: 3rem 0rem 2rem 0rem;
@@ -253,19 +274,19 @@ body {
 .card-brown {
   background:rgb(122, 105, 91);
   box-shadow: 4px 4px 12px rgb(0, 0, 0, 0.5);
-  margin: 3rem;
-  padding: 2rem;
-  border-radius: 15px;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 .card-brown h2 {
   color:lightblue;
-  font-family:'Courier New', Courier, monospace;
-  font-size: 2rem;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   text-align: center;
-  padding: 1rem;
+  margin: 1rem;
 }
 
 .card-brown h2:hover {
@@ -286,7 +307,7 @@ a {
 }
 
 .card-brown img {
-  border-radius: 15px;
+  border-radius: 5px;
   border: 1px solid antiquewhite;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
   width: 100%;
@@ -313,10 +334,18 @@ a {
 }
 
 .devicon{
-  font-size: 2rem;
-  /* color: rgb(112, 152, 166); */
+  font-size: 1.5rem;
   color: rgb(255,255,255,0.8);
   text-shadow: 5px 5px 10px rgb(0,0,0,0.5);
+}
+
+.devicon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle; /* 見た目の揃え */
+  color: rgb(255,255,255,0.8);
+  text-shadow: 5px 5px 10px rgb(0,0,0,0.5);
+
 }
 
 .back-to-top {
@@ -342,7 +371,6 @@ a {
   background-color:rgb(88, 130, 145);
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   height: 100px;
   padding: 0px 50px;
   color: rgb(255,255,255,0.8);
