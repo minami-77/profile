@@ -21,19 +21,19 @@
 
 body {
   margin: 0px; /* remove default margin*/
-  padding-top: 4rem;
-
+  /* padding-top: 4rem; */
 }
 
 /* Navbar */
 .navbar{
   font-family: "Nunito", sans-serif;
   height: 4rem;
-  background-color:rgb(88, 130, 145);
+  background-color:white;
+  box-shadow:0px 0px 10px rgb(88, 130, 145, 0.5) ;
   display: flex;
-  justify-content: end !important;
+  justify-content: space-between !important;
   align-items: center;
-  padding: 1rem 0rem;
+  padding: 2rem;
   position:fixed !important;/* 固定 */
   top:0;
   left: 0;
@@ -42,20 +42,31 @@ body {
   flex-wrap: nowrap !important;
 }
 
+.img-square{
+  width: 3rem;
+  height: 3rem;
+  margin:1rem;
+}
+
+.tabs-container{
+  margin: 1rem;
+}
+
 .tabs-underlined {
   display: flex;
   align-items: center;
+  margin:0rem;
 }
 
 .tabs-underlined .tab-underlined {
-  color: white;
+  color: rgb(88, 130, 145, 0.8);
+  font-family: "Charm", cursive;
   font-size: 1.25rem;
-  padding: 8px;
-  margin: 8px;
-  opacity: 0.4;
+  margin: 0rem 1rem;
+  opacity: 0.8;
   cursor: pointer;
   text-decoration: none;
-  border-bottom: 4px solid transparent;
+  border-bottom: 3px solid transparent;
 }
 
 .tabs-underlined .tab-underlined.active {
@@ -67,8 +78,8 @@ body {
   margin: 1rem;
   display: flex;
   align-items: center;
-
 }
+
 .btn-lang {
   font-size: 1rem;
   font-family: "Nunito", sans-serif;
@@ -119,12 +130,14 @@ body {
 .eng-white{
   font-size: 3rem;
   color: white !important;
-  font-family:'Courier New', Courier, monospace;
-  font-weight: bold !important;
+  font-family: "Charm", cursive;
+  font-weight: 700;
+  font-style: normal;
   text-shadow: 5px 5px 10px rgb(44, 89, 104);
   animation-duration: 2s;
   animation-name: slidein;
-  padding: 1rem;
+  padding: 2rem;
+  margin-bottom: 1rem;
 }
 
 .jp-white{
@@ -140,6 +153,7 @@ body {
   animation-duration: 2s;
   animation-name: slidein;
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 @keyframes fadein {
@@ -151,8 +165,16 @@ body {
   }
 }
 
+.blur-background{
+  background-color: rgb(255,255,255,0.3);
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  padding: 1rem;
+  opacity: 0; /* 初期状態は非表示 */
+  animation: fadein 2s ease-in forwards;
+  animation-delay: 2s;
+}
 .large-eng-brown{
-  font-family: "Nunito", sans-serif;
+  font-family: "Charm", cursive;
   font-weight: bold;
   font-size: 1.5rem;
   color: rgb(84, 67, 53);
@@ -179,11 +201,9 @@ body {
 
 .eng-brown{
   color: rgb(84, 67, 53);
-  /* font-family: "Nunito", sans-serif; */
-  /* font-family: "M PLUS Rounded 1c", sans-serif; */
-  font-family: "Zen Maru Gothic", serif;
+  font-family: "Nunito", sans-serif;
   font-size: 1.25rem;
-  text-shadow: 1px 1px 3px rgb(0,0,0,0.3);
+  text-shadow: 1px 1px 5px rgb(0,0,0,0.3);
   margin: 0px;
   opacity: 0; /* 初期状態は非表示 */
   animation: fadein 2s ease-in forwards;
@@ -192,7 +212,7 @@ body {
 
 .jp-brown{
   color: rgb(84, 67, 53);
-  font-family: "Nunito", sans-serif;
+  /* font-family: "Nunito", sans-serif; */
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-size: 1.20rem;
   text-shadow: 1px 1px 3px rgb(0,0,0,0.2);
@@ -213,37 +233,6 @@ body {
   margin: 2rem;
 }
 
-/* Contact */
-.contact-container{
-  width: 70%;
-  margin: 1rem auto;
-  padding: 1rem;
-  background-color: rgb(255,255,255,0.2);
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
-  opacity: 0; /* 初期状態は非表示 */
-  animation: fadein 2s ease-in forwards;
-  animation-delay: 2s;
-}
-
-.contact-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon-brown {
-  font-size: 2.5rem;
-  color:rgb(84, 67, 53);
-  text-shadow: 5px 5px 10px rgb(0,0,0,0.5);
-  margin: 0px 2rem;
-}
-
-.icon-brown:hover{
-  color: rgb(116, 170, 188);
-  text-shadow: 5px 5px 10px rgb(44, 89, 104);
-}
-
 /* Common components */
 .background-beige{
   width: 100%;
@@ -256,7 +245,7 @@ body {
 }
 
 .category-title {
-  font-family: "Nunito", sans-serif;
+  font-family: "Charm", cursive;
   font-weight: bold;
   font-size: 1.5rem;
   color: rgb(84, 67, 53);
@@ -313,7 +302,7 @@ body {
 
 .card-brown h2 {
   color:lightblue;
-  font-family: "Nunito", sans-serif;
+  font-family: "Charm", cursive;
   font-size: 1.5rem;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
@@ -412,6 +401,30 @@ a {
 .back-to-top:hover{
   color: rgb(255,255,255,0.8);
   background-color:rgb(88, 130, 145);
+}
+
+
+/* Contact */
+.contact-container{
+  padding: 3rem 0rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-brown {
+  font-size: 2.5rem;
+  color:rgb(84, 67, 53);
+  text-shadow: 5px 5px 10px rgb(0,0,0,0.5);
+  margin: 0px 2rem;
+}
+
+.icon-brown:hover{
+  color: rgb(116, 170, 188);
+  text-shadow: 5px 5px 10px rgb(44, 89, 104);
 }
 
 /* Footer */
