@@ -106,7 +106,7 @@ body {
 /* Profile Banner */
 .background-banner {
   padding-top: 4rem;/*navbar分あける*/
-  background-image: linear-gradient(rgba(64, 120, 137, 0.3), rgba(131, 220, 250, 0.1)),url(images/16-9.JPG);
+  background-image: linear-gradient(rgba(64, 120, 137, 0.2), rgba(131, 220, 250, 0.1)),url(images/16-9.JPG);
   background-size: cover;
   background-position:top;
   /* height: 100vh; */
@@ -169,7 +169,7 @@ body {
 
 .blur-background{
   /* background-color: rgba(255, 205, 253, 0.2); */
-  background-color: rgba(255, 239, 255, 0.4);
+  background-color: rgba(255, 239, 255, 0.5);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   padding: 1rem;
   opacity: 0; /* 初期状態は非表示 */
@@ -241,7 +241,7 @@ body {
 /* Common components */
 .background-beige{
   width: 100%;
-  background:linear-gradient( rgba(153, 214, 236, 0.4), rgba(153, 214, 236, 0.8));
+  background:linear-gradient( rgba(153, 214, 236, 0.4), rgba(153, 214, 236, 0.6));
 }
 
 .middle-container {
@@ -280,7 +280,7 @@ body {
   background-color: rgba(255, 239, 255, 0.6);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   /* background-color: rgba(255, 255, 255, 0.3); */
-  display: inline-block;
+  /* display: inline-block; */
   /* border: 0.5rem solid rgba(255, 205, 253, 0.5); */
   /* border-radius: 15px; */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
