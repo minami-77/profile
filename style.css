@@ -60,6 +60,7 @@ body {
 
 .tabs-underlined .tab-underlined {
   color: rgb(88, 130, 145);
+  text-shadow: 5px 5px 10px rgb(0,0,0,0.3);
   font-family: "Charm", cursive;
   font-weight: bold;
   font-size: 1.25rem;
@@ -72,7 +73,7 @@ body {
 
 .tabs-underlined .tab-underlined.active {
   opacity: 1;
-  border-bottom: 3px solid #555555;
+  border-bottom: 3px solid rgb(84, 67, 53, 0.8);
 }
 
 .btn-container{
@@ -85,20 +86,20 @@ body {
   font-size: 1rem;
   font-family: "Nunito", sans-serif;
   color: white;
-  background-color: rgb(84, 67, 53);
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  background-color: rgb(88, 130, 145);
+  /* box-shadow: 0 0 20px rgba(0,0,0,0.2); */
   display: inline; /* 背景を文字の幅に合わせる */
   padding: 5px 5px; /* 少し余白をつけると見やすい */
   border-radius: 5px; /* 角を丸くする（任意） */
 }
 
 .btn-lang:hover{
-  color: rgb(84, 67, 53);
+  color: rgb(88, 130, 145);
   background-color:  rgb(255,255,255,0.8);
 }
 
 .btn-lang.active{
-  color: rgb(84, 67, 53);
+  color: rgb(88, 130, 145);
   background-color:  rgb(255,255,255,0.8);
 }
 
@@ -108,7 +109,7 @@ body {
   background-image: linear-gradient(rgba(64, 120, 137, 0.3), rgba(131, 220, 250, 0.1)),url(images/16-9.JPG);
   background-size: cover;
   background-position:top;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .profile-container{
@@ -167,12 +168,14 @@ body {
 }
 
 .blur-background{
-  background-color: rgb(255,255,255,0.3);
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  /* background-color: rgba(255, 205, 253, 0.2); */
+  background-color: rgba(255, 239, 255, 0.4);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   padding: 1rem;
   opacity: 0; /* 初期状態は非表示 */
   animation: fadein 2s ease-in forwards;
   animation-delay: 2s;
+  margin-bottom: 1rem;
 }
 .large-eng-brown{
   font-family: "Charm", cursive;
@@ -238,7 +241,7 @@ body {
 /* Common components */
 .background-beige{
   width: 100%;
-  background:linear-gradient( rgba(255, 255, 255, 0.4), rgba(141, 198, 219, 0.6));
+  background:linear-gradient( rgba(153, 214, 236, 0.4), rgba(153, 214, 236, 0.8));
 }
 
 .middle-container {
@@ -261,20 +264,26 @@ body {
 }
 
 .eng-blue{
-  color: rgb(88, 130, 145);
+  color:rgb(88, 130, 145);
+  text-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+  /* color: rgb(84, 67, 53); */
   font-size: 1.5rem;
-  font-family: "Uchen", serif;
+  font-family: "Charm", cursive;
+  font-weight: bold;
+  /* font-family: "Uchen", serif; */
   /* font-family: "Nunito", sans-serif; */
   font-weight: bold;
 }
 .skill-img-container{
   margin: 1rem;
   padding: 1rem;
-  background-color: rgb(255,255,255,0.4);
+  background-color: rgba(255, 239, 255, 0.6);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(255, 255, 255, 0.3); */
   display: inline-block;
-  border: 0.5rem solid rgb(88, 130, 145, 0.5);
+  /* border: 0.5rem solid rgba(255, 205, 253, 0.5); */
   /* border-radius: 15px; */
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .skill-category{
@@ -296,16 +305,19 @@ body {
 }
 
 .card-brown {
-  background:rgb(122, 105, 91);
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  /* background:rgb(122, 105, 91); */
+  background-color: rgba(255, 239, 255, 0.6);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   margin: 1rem;
   padding: 1rem;
-  border: 0.5rem solid rgb(255,255,255,0.5);
+  /* border: 0.5rem solid rgb(255,255,255,0.5); */
   /* border-radius: 10px; */
 }
 
 .card-brown h2 {
-  color:lightblue;
+  color: rgb(84, 67, 53);
+  text-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+  /* color:lightblue; */
   /* font-family: "Nunito", sans-serif; */
   font-family: "Uchen", serif;
   font-size: 1.5rem;
@@ -316,7 +328,7 @@ body {
 }
 
 .card-brown h2:hover {
-  color: rgb(84, 67, 53);
+  color:rgb(88, 130, 145);
 }
 
 a {
@@ -325,17 +337,19 @@ a {
 
 .link-icon {
   font-size: 1rem;
-  color: lightblue;
+  color:rgb(88, 130, 145);
+  /* color: lightblue; */
 }
 
 .link-icon:hover {
-  color: rgb(84, 67, 53);
+  color:rgb(88, 130, 145);
+  /* color: rgb(84, 67, 53); */
 }
 
 .card-brown img {
   border-radius: 5px;
-  border: 1px solid antiquewhite;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  /* border: 1px solid antiquewhite; */
+  /* box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); */
   width: 100%;
   height: 240px;
   object-fit: cover;
@@ -343,26 +357,25 @@ a {
 }
 
 .card-text {
-  color: rgb(255,255,255,0.8);
-  /* font-family: "Nunito", sans-serif; */
+  /* color: rgb(255,255,255,0.8); */
+  color: rgb(84, 67, 53);
   font-family: "Uchen", serif;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: 1.25rem;
   margin: 0px;
 }
 
 .card-text-jp {
   color: rgb(255,255,255,0.8);
   font-family: "M PLUS Rounded 1c", sans-serif;
-  /* font-family: "Nunito", sans-serif; */
   font-size: 1rem;
   margin: 0px;
 }
 
 .small-text{
-  color: rgb(255,255,255,0.8);
+  /* color: rgb(255,255,255,0.8); */
+  color: rgb(84, 67, 53);
   font-size: 0.8rem;
-  /* font-family: Arial, Helvetica, sans-serif; */
-  /* font-family: "Nunito", sans-serif; */
   font-family: "Uchen", serif;
 }
 .small-text-jp{
@@ -379,8 +392,11 @@ a {
 
 .devicon{
   font-size: 1.5rem;
-  color: rgb(255,255,255,0.8);
-  text-shadow: 5px 5px 10px rgb(0,0,0,0.5);
+  /* color: rgb(84, 67, 53); */
+  color:rgb(88, 130, 145);
+  /* color:rgb(88, 130, 145); */
+  /* color: rgb(255,255,255,0.8); */
+  text-shadow: 0px 0px 10px rgb(0,0,0,0.3);
 }
 
 .devicon svg {
@@ -389,7 +405,6 @@ a {
   vertical-align: middle; /* 見た目の揃え */
   color: rgb(255,255,255,0.8);
   text-shadow: 5px 5px 10px rgb(0,0,0,0.5);
-
 }
 
 .back-to-top {
