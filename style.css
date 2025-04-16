@@ -59,8 +59,9 @@ body {
 }
 
 .tabs-underlined .tab-underlined {
-  color: rgb(88, 130, 145, 0.8);
+  color: rgb(88, 130, 145);
   font-family: "Charm", cursive;
+  font-weight: bold;
   font-size: 1.25rem;
   margin: 0rem 1rem;
   opacity: 0.8;
@@ -128,7 +129,7 @@ body {
 }
 
 .eng-white{
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: white !important;
   font-family: "Charm", cursive;
   font-weight: 700;
@@ -201,7 +202,8 @@ body {
 
 .eng-brown{
   color: rgb(84, 67, 53);
-  font-family: "Nunito", sans-serif;
+  /* font-family: "Nunito", sans-serif; */
+  font-family: "Uchen", serif;
   font-size: 1.25rem;
   text-shadow: 1px 1px 5px rgb(0,0,0,0.3);
   margin: 0px;
@@ -236,7 +238,7 @@ body {
 /* Common components */
 .background-beige{
   width: 100%;
-  background:linear-gradient(rgb(202, 197, 193, 0.8), rgba(202, 197, 193, 0.4));
+  background:linear-gradient( rgba(255, 255, 255, 0.4), rgba(141, 198, 219, 0.6));
 }
 
 .middle-container {
@@ -247,12 +249,11 @@ body {
 .category-title {
   font-family: "Charm", cursive;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: rgb(84, 67, 53);
   text-shadow: 5px 5px 10px rgb(0,0,0,0.5);
   padding: 1rem;
 }
-
 
 /* Skills */
 .my-skill-container{
@@ -262,15 +263,17 @@ body {
 .eng-blue{
   color: rgb(88, 130, 145);
   font-size: 1.5rem;
-  font-family: "Nunito", sans-serif;
+  font-family: "Uchen", serif;
+  /* font-family: "Nunito", sans-serif; */
   font-weight: bold;
 }
 .skill-img-container{
-  margin: 1rem auto;
+  margin: 1rem;
   padding: 1rem;
-  background-color: rgb(255,255,255,0.5);
+  background-color: rgb(255,255,255,0.4);
   display: inline-block;
-  border-radius: 15px;
+  border: 0.5rem solid rgb(88, 130, 145, 0.5);
+  /* border-radius: 15px; */
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
@@ -297,12 +300,14 @@ body {
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
   margin: 1rem;
   padding: 1rem;
-  border-radius: 10px;
+  border: 0.5rem solid rgb(255,255,255,0.5);
+  /* border-radius: 10px; */
 }
 
 .card-brown h2 {
   color:lightblue;
-  font-family: "Charm", cursive;
+  /* font-family: "Nunito", sans-serif; */
+  font-family: "Uchen", serif;
   font-size: 1.5rem;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
@@ -339,7 +344,8 @@ a {
 
 .card-text {
   color: rgb(255,255,255,0.8);
-  font-family: "Nunito", sans-serif;
+  /* font-family: "Nunito", sans-serif; */
+  font-family: "Uchen", serif;
   font-size: 1rem;
   margin: 0px;
 }
@@ -356,7 +362,8 @@ a {
   color: rgb(255,255,255,0.8);
   font-size: 0.8rem;
   /* font-family: Arial, Helvetica, sans-serif; */
-  font-family: "Nunito", sans-serif;
+  /* font-family: "Nunito", sans-serif; */
+  font-family: "Uchen", serif;
 }
 .small-text-jp{
   color: rgb(255,255,255,0.8);
@@ -429,7 +436,9 @@ a {
 
 /* Footer */
 .footer {
-  background-color:rgb(88, 130, 145);
+  background-color:rgb(88, 130, 145)!important;
+  font-family: "Uchen", serif;
+  color: white ;
   display: flex;
   align-items: center;
   height: 100px;
