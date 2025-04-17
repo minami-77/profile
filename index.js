@@ -9,9 +9,7 @@ const tabProjects = document.querySelector('#tab-projects');
 // const skills = document.querySelector('#skills');
 // const projects = document.querySelector('#projects');
 
-
 // 日本語対応していない
-
 
 
 
