@@ -162,13 +162,10 @@ body {
 }
 
 .jp-white{
+  font-family: "Shippori Mincho", serif;
+  font-style: normal;
   font-size: 3rem;
   color: white !important;
-  /* font-family: "Zen Maru Gothic", serif; */
-  /* font-family: "M PLUS Rounded 1c", sans-serif; */
-  /* font-family: "Hina Mincho", serif; */
-  /* font-family: "Sawarabi Mincho", serif; */
-  font-family: "Shippori Mincho", serif;
   font-weight: bold !important;
   text-shadow: 5px 5px 10px rgb(44, 89, 104);
   animation-duration: 2s;
@@ -188,7 +185,9 @@ body {
 
 .blur-background{
   background-color: rgba(255, 239, 255, 0.5);
-  box-shadow: 0 0 20px rgba(88, 130, 145, 0.5);
+  box-shadow:
+    inset 0px 0px 20px rgb(255, 0, 221, 0.2), /* 内側のシャドウ */
+    0 0 20px rgba(88, 130, 145, 0.5); /* 外側のシャドウ */
   padding: 1rem;
   opacity: 0; /* 初期状態は非表示 */
   animation: fadein 2s ease-in forwards;
@@ -208,8 +207,7 @@ body {
 }
 
 .large-jp-brown{
-  /* font-family: "Zen Maru Gothic", serif; */
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Shippori Mincho", serif;
   font-weight: bold;
   font-size: 1.5rem;
   color: rgb(84, 67, 53);
@@ -223,9 +221,8 @@ body {
 
 .eng-brown{
   color: rgb(84, 67, 53);
-  /* font-family: "Nunito", sans-serif; */
   font-family: "Uchen", serif;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   text-shadow: 1px 1px 5px rgb(0,0,0,0.3);
   margin: 0px;
   opacity: 0; /* 初期状態は非表示 */
@@ -235,9 +232,8 @@ body {
 
 .jp-brown{
   color: rgb(84, 67, 53);
-  /* font-family: "Nunito", sans-serif; */
-  font-family: "M PLUS Rounded 1c", sans-serif;
-  font-size: 1.20rem;
+  font-family: "Klee One", cursive;
+  font-size: 1.2rem;
   text-shadow: 1px 1px 3px rgb(0,0,0,0.2);
   margin: 0px;
   opacity: 0; /* 初期状態は非表示 */
@@ -276,6 +272,15 @@ body {
   padding: 1rem;
 }
 
+.category-title-jp {
+  font-family: "Shippori Mincho", serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(84, 67, 53);
+  text-shadow: 5px 5px 10px rgb(0,0,0,0.5);
+  padding: 1rem;
+}
+
 /* Skills */
 .my-skill-container{
   padding: 3rem 0rem;
@@ -289,11 +294,21 @@ body {
   font-weight: bold;
 }
 
+.jp-blue{
+  font-family: "Shippori Mincho", serif;
+  color:rgb(88, 130, 145);
+  text-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .skill-img-container{
   margin: 1rem;
   padding: 1rem;
-  background-color: rgba(255, 239, 255, 0.8);
-  box-shadow: 0 0 20px rgba(88, 130, 145, 0.5);
+  background-color: rgba(255, 239, 255, 0.5);
+  box-shadow:
+    inset 0px 0px 20px rgb(255, 0, 221, 0.2), /* 内側のシャドウ */
+    0 0 20px rgba(88, 130, 145, 0.5); /* 外側のシャドウ */
 }
 
 .skill-category{
@@ -316,7 +331,9 @@ body {
 
 .card-brown {
   background-color: rgba(255, 239, 255, 0.6);
-  box-shadow: 0 0 20px rgba(88, 130, 145, 0.5);
+  box-shadow:
+    inset 0px 0px 20px rgb(255, 0, 221, 0.2), /* 内側のシャドウ */
+    0 0 20px rgba(88, 130, 145, 0.5); /* 外側のシャドウ */
   margin: 1rem;
   padding: 1rem;
 }
@@ -336,16 +353,17 @@ body {
 }
 
 .project-link{
-  /* background-color:rgb(88, 130, 145); */
-  background-color:rgb(84, 67, 53);
+  background-color:rgb(104, 94, 86, 0.8);
+  box-shadow: 0px 0px 30px rgb(255, 0, 221, 0.2);
   text-shadow: 0px 0px 10px rgb(0,0,0,0.3);
   padding: 0.5rem;
   display: inline;
-  margin: 0.5rem;
+  margin: 0.5rem !important;
 }
 
 .project-link:hover{
   background-color: rgb(255, 0, 221, 0.4);
+  box-shadow: 0px 0px 30px rgb(255, 0, 221, 0.3);
 }
 
 a {
@@ -364,38 +382,39 @@ a {
 }
 
 .card-brown img {
-  /* box-shadow: 0 0 20px rgba(88, 130, 145, 0.5); */
-  border: 3px solid rgb(255,255,255,0.8);
+  border: 3px solid rgb(255,255,255);
   width: 100%;
   height: 240px;
   object-fit: cover;
-  /* margin: 10px auto; */
 }
 
 .card-text {
   color: rgb(84, 67, 53);
   font-family: "Uchen", serif;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin: 0px;
 }
 
+
 .card-text-jp {
-  color: rgb(255,255,255,0.8);
-  font-family: "M PLUS Rounded 1c", sans-serif;
-  font-size: 1rem;
+  color: rgb(84, 67, 53);
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-size: 1.2rem;
   margin: 0px;
 }
 
 .small-text{
   color: rgb(84, 67, 53);
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-family: "Uchen", serif;
 }
+
 .small-text-jp{
-  color: rgb(255,255,255,0.8);
-  font-size: 0.8rem;
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(84, 67, 53);
+  font-size: 1rem;
+  font-family: "Shippori Mincho", serif;
 }
 
 .devicon-container{
@@ -404,8 +423,9 @@ a {
 
 .devicon{
   font-size: 1.5rem;
-  color:rgb(84, 67, 53);
-  text-shadow: 0px 0px 10px rgb(0,0,0,0.3);
+  /* color:rgb(84, 67, 53); */
+  color:rgb(88, 130, 145);
+  /* text-shadow: 0px 0px 10px rgb(0,0,0,0.3); */
 }
 
 .back-to-top {
@@ -426,7 +446,6 @@ a {
   background-color:rgb(88, 130, 145);
 }
 
-
 /* Contact */
 .contact-container{
   padding: 3rem 0rem;
@@ -440,14 +459,17 @@ a {
 
 .icon-brown {
   font-size: 2.5rem;
-  color:rgb(84, 67, 53);
-  text-shadow: 5px 5px 10px rgb(0,0,0,0.5);
+  color:rgb(104, 94, 86, 0.8);
+  /* color: rgb(116, 170, 188); */
+  /* text-shadow: 5px 5px 10px rgb(0,0,0,0.5); */
+  text-shadow: 0px 0px 30px rgb(255, 0, 221, 0.2);
   margin: 0px 2rem;
 }
 
 .icon-brown:hover{
-  color: rgb(116, 170, 188);
-  text-shadow: 5px 5px 10px rgb(44, 89, 104);
+  color: rgb(255, 0, 221, 0.4);
+  text-shadow: 0px 0px 30px rgb(255, 0, 221, 0.3);
+  /* text-shadow: 5px 5px 10px rgb(44, 89, 104); */
 }
 
 /* Footer */
