@@ -38,14 +38,13 @@
 
 body {
   margin: 0px; /* remove default margin*/
-  /* padding-top: 4rem; */
 }
 
 /* Navbar */
 .navbar{
   font-family: "Nunito", sans-serif;
   height: 4rem;
-  background-color:white;
+  background-color: rgb(255,255,255) !important;
   box-shadow:0px 0px 10px rgb(88, 130, 145, 0.5) ;
   display: flex;
   align-items: center;
