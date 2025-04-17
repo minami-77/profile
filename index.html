@@ -24,29 +24,43 @@
       </div>
       <div class="d-flex">
 
-        <div class="btn-container">
-          <button id="btn-en" class="btn-lang active">
-            EN
-          </button>
-          |
-          <button id="btn-jp" class="btn-lang">
-            JP
-          </button>
-        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <div class="container">
+            <a href="#top" id="tab-profile" ><img src="./images/logo_m.png" class="img-square"></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="container-fluid justify-content-start">
+              <div class="btn-container">
+                <button id="btn-en" class="btn-lang active">
+                  EN
+                </button>
+                |
+                <button id="btn-jp" class="btn-lang">
+                  JP
+                </button>
+              </div>
+              </form>
+            <div class="collapse navbar-collapse tabs-container" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 list-inline tabs-underlined">
 
-        <div class="tabs-container">
-          <ul class="list-inline tabs-underlined">
-            <li>
-              <a href="#skills" id="tab-skills" class="tab-underlined">Skills</a>
-            </li>
-            <li>
-              <a href="#projects" id="tab-projects" class="tab-underlined">Projects</a>
-            </li>
-            <li>
-              <a href="#contact" id="tab-contact" class="tab-underlined">Contact</a>
-            </li>
-          </ul>
-        </div>
+                <li class="nav-item">
+                  <a href="#skills" id="tab-skills" class="tab-underlined">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#projects" id="tab-projects" class="tab-underlined">Projects</a>
+                </li>
+                <li class="nav-item">
+                <a href="#contact" id="tab-contact" class="tab-underlined">Contact</a>
+                </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
       </div>
     </div>
@@ -67,17 +81,6 @@
     <div class="english">
       <div id="top" class="background-banner d-flex flex-column justify-content-center align-item-center">
         <div class="profile-container">
-
-          <!-- <div class="btn-container d-flex justify-content-end">
-            <button id="btn-en" class="btn-lang active">
-              EN
-            </button>
-            |
-            <button id="btn-jp" class="btn-lang">
-              JP
-            </button>
-          </div> -->
-
 
           <h1 class="eng-white text-center">Minami Takayama</h1>
 
@@ -428,5 +431,7 @@
     </div>
 
   <script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
   </body>
 </html>
