@@ -10,6 +10,7 @@
   .container {
     width: 500px;
   }
+  /* for folding contents of navbar  */
   .navbar-collapse{
     background-color: rgb(255,255,255,0.7);
     color: white;
@@ -26,6 +27,7 @@
   .container {
     width: 300px;
   }
+  /* for folding contents of navbar  */
   .navbar-collapse{
     background-color: rgb(255,255,255,0.7);
     margin: 0px;
@@ -55,6 +57,58 @@ body {
   flex-wrap: nowrap !important;
 }
 
+
+.navbar-toggler{
+  color: rgb(88, 130, 145);
+}
+
+.tabs-container{
+  margin: 1rem;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  margin:0rem;
+}
+
+.tabs .tab {
+  font-family: "Charm", cursive;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: rgb(88, 130, 145);
+  text-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+  margin: 0rem 1rem;
+  opacity: 0.8;
+  cursor: pointer;
+  text-decoration: none;
+  /* border-bottom: 3px solid transparent; */
+}
+
+.tabs .tab-jp{
+  font-family: "Shippori Mincho", serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgb(88, 130, 145);
+  text-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+  margin: 0rem 1rem;
+  opacity: 0.8;
+  cursor: pointer;
+  text-decoration: none;
+  /* border-bottom: 3px solid transparent; */
+}
+
+#nav-jp {
+  display: flex;         /* 横並びにする */
+  justify-content: flex-end; /* 右寄せにしたければこれもOK */
+  gap: 1.5rem;           /* タブ同士の間隔を調整 */
+}
+
+#nav-jp .nav-item {
+  white-space: nowrap;   /* 改行させない */
+}
+
+/* Language */
 .btn-container{
   margin: 1rem;
   display: flex;
@@ -85,48 +139,13 @@ body {
   border-bottom: 4px solid rgb(255, 0, 221, 0.4);
 }
 
+/* Logo */
 .img-square{
   width: 3rem;
   height: 3rem;
   margin:1rem;
 }
 
-.navbar-toggler{
-  color: rgb(88, 130, 145);
-}
-.tabs-container{
-  margin: 1rem;
-}
-
-.tabs-underlined {
-  display: flex;
-  align-items: center;
-  margin:0rem;
-}
-
-.tabs-underlined .tab-underlined {
-  color: rgb(88, 130, 145);
-  text-shadow: 5px 5px 10px rgb(0,0,0,0.3);
-  font-family: "Charm", cursive;
-  font-weight: bold;
-  font-size: 1.25rem;
-  margin: 0rem 1rem;
-  opacity: 0.8;
-  cursor: pointer;
-  text-decoration: none;
-  border-bottom: 3px solid transparent;
-}
-
-.tabs-underlined .tab-underlined-jp{
-  font-family: "Shippori Mincho", serif;
-  font-weight: bold;
-  font-size: 1rem;
-}
-/*
-.tabs-underlined .tab-underlined.active {
-  opacity: 1;
-  border-bottom: 3px solid rgb(84, 67, 53, 0.8);
-} */
 
 /* Profile Banner */
 .background-banner {
@@ -160,10 +179,11 @@ body {
   font-weight: 700;
   font-style: normal;
   text-shadow: 5px 5px 10px rgb(44, 89, 104);
-  animation-duration: 2s;
-  animation-name: slidein;
   padding: 2rem;
   margin-bottom: 1rem;
+  /* animation@keyframe:silidein */
+  animation-duration: 2s;
+  animation-name: slidein;
 }
 
 .jp-white{
@@ -173,10 +193,11 @@ body {
   color: white !important;
   font-weight: bold !important;
   text-shadow: 5px 5px 10px rgb(44, 89, 104);
-  animation-duration: 2s;
-  animation-name: slidein;
   padding: 1rem;
   margin-bottom: 1rem;
+  /* animation@keyframe:silidein */
+  animation-duration: 2s;
+  animation-name: slidein;
 }
 
 @keyframes fadein {
@@ -195,11 +216,12 @@ body {
     0 0 20px rgba(88, 130, 145, 0.5); /* 外側のシャドウ */
   padding: 1rem;
   opacity: 0; /* 初期状態は非表示 */
+  margin-bottom: 1rem;
+  /* animation@keyframe:fadein */
   animation: fadein 2s ease-in forwards;
   animation-delay: 2s;
-  margin-bottom: 1rem;
 }
-.large-eng-brown{
+.large-eng-blue{
   font-family: "Charm", cursive;
   font-weight: bold;
   font-size: 1.5rem;
@@ -207,11 +229,12 @@ body {
   padding-bottom: 1rem;
   text-shadow: 5px 5px 10px rgb(0,0,0,0.3);
   opacity: 0; /* 初期状態は非表示 */
+  /* animation@keyframe:fadein */
   animation: fadein 2s ease-in forwards;
   animation-delay: 2s;
 }
 
-.large-jp-brown{
+.large-jp-blue{
   font-family: "Shippori Mincho", serif;
   font-weight: bold;
   font-size: 1.5rem;
@@ -219,10 +242,10 @@ body {
   padding-bottom: 1rem;
   text-shadow: 5px 5px 10px rgb(0,0,0,0.3);
   opacity: 0; /* 初期状態は非表示 */
+  /* animation@keyframe:fadein */
   animation: fadein 2s ease-in forwards;
   animation-delay: 2s;
 }
-
 
 .eng-brown{
   color: rgb(84, 67, 53);
@@ -268,7 +291,7 @@ body {
 }
 
 /* Common components */
-.background-beige{
+.background-white{
   width: 100%;
   background:linear-gradient( rgba(153, 214, 236, 0.4), rgba(153, 214, 236, 0.6));
 }
