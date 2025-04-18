@@ -11,7 +11,8 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Kaisei+Tokumin&family=Klee+One:wght@400;600&family=Noto+Serif+JP:wght@200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Shippori+Mincho&family=Shippori+Mincho+B1&family=Uchen&family=Zen+Antique+Soft&family=Zen+Maru+Gothic&family=Zen+Old+Mincho&display=swap" rel="stylesheet">    <title>My profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Klee+One:wght@400;600&family=Kosugi+Maru&family=Noto+Serif+JP:wght@200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Shippori+Mincho&family=Shippori+Mincho+B1&family=Uchen&family=Zen+Antique+Soft&family=Zen+Maru+Gothic&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+
   </head>
 
   <body>
@@ -40,9 +41,9 @@
               <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Navbar contents -->
             <div class="collapse navbar-collapse tabs-container" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 list-inline tabs-underlined">
+              <!-- EN Navbar contents -->
+              <ul id="nav-en" class="navbar-nav me-auto mb-2 mb-lg-0 list-inline tabs-underlined">
                 <li class="nav-item">
                   <a href="#skills" id="tab-skills" class="nav-link tab-underlined">Skills</a>
                 </li>
@@ -53,6 +54,20 @@
                   <a href="#contact" id="tab-contact" class="nav-link tab-underlined">Contact</a>
                 </li>
               </ul>
+
+                <!-- JP Navbar contents -->
+              <ul id="nav-jp" class="navbar-nav me-auto mb-2 mb-lg-0 list-inline tabs-underlined d-none">
+                <li class="nav-item">
+                  <a href="#skills-jp" id="tab-skills-jp" class="nav-link tab-underlined-jp">スキル</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#projects-jp" id="tab-projects-jp" class="nav-link tab-underlined-jp">プロジェクト</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact-jp" id="tab-contact-jp" class="nav-link tab-underlined-jp">連絡先</a>
+                </li>
+              </ul>
+
             </div>
           </div>
         </nav>
@@ -80,11 +95,12 @@
                 Full Stack Programmer
               </h2>
               <p class="eng-brown text-center">
-                Hi, I'm Minami from Japan.
-                I am a former public sector specialist with experience in international relations, policy coordination, and education administration.
-                After completing a 24-week web development boot camp, I am transitioning into a bilingual developer career and seeking opportunities in Tokyo.
-                Driven by a desire to develop specialized technical skills, I pursued web development to apply my problem-solving and project management abilities in new ways.
-                <br>I like classical music, art, reading, coffee, traveling!
+                Hi, I'm Minami from Japan!
+                I have a background in <strong>public sector</strong> work, including international relations, policy coordination, and education administration.
+                <br>After completing a 24-week <strong>Web Development Bootcamp</strong> at Le Wagon, I'm now transitioning into <strong>a full-stack developer</strong> role.
+                I'm able to work and communicate in both <strong>Japanese and English</strong>, and I'm currently seeking opportunities in <strong>Tokyo</strong>.
+                I'm excited to apply my problem-solving and project management skills in the tech world, while continuing to grow as a developer.
+                <br>Outside of work, I love classical music, art, reading, coffee, and traveling!
               </p>
             </div>
           </div>
@@ -267,7 +283,7 @@
 
     <!-- 日本語 -->
     <div class="japanese d-none">
-      <div id="top" class="background-banner d-flex flex-column justify-content-center align-item-center">
+      <div id="top-jp" class="background-banner d-flex flex-column justify-content-center align-item-center">
         <div class="profile-container">
 
           <h1 class="jp-white text-center">高山 みなみ</h1>
@@ -284,8 +300,9 @@
                 フルスタックエンジニア
               </h2>
               <p class="jp-brown text-center">
-                日本出身です。今までは公共セクターで国際関係、政策調整、教育行政に携わってきました。
-                24週間のウェブ開発ブートキャンプを修了し、日英対応のフルスタックエンジニアとして、東京での機会を探しています。
+                こんにちは、日本出身の高山みなみです。これまでに国際、政策、経済、教育など、<strong>公共セクター</strong>での業務経験があります。
+                Le Wagonでの24週間の<strong>ウェブ開発ブートキャンプ</strong>（英語）を修了し、
+                現在は、<strong>日本語と英語</strong>に対応可能な<strong>フルスタックエンジニア</strong>としての新たなキャリアに挑戦しています。<strong>東京</strong>での機会を探しています。
                 専門的な技術スキルを磨きながら、これまでに培った問題解決能力とプロジェクト管理能力を新たな形で活かしたいと考えています。
                 <br>好きなものは、クラシック音楽、アート、読書、コーヒー、海外旅行です！
               </p>
@@ -296,10 +313,11 @@
 
       <div class="background-beige">
         <div class="middle-container">
-          <div id="skills" class="my-skill-container">
+          <div id="skills-jp" class="my-skill-container">
             <h2 class="category-title-jp text-center">
               技術スキル
             </h2>
+
 
             <div class="container">
               <div class="row">
@@ -350,7 +368,7 @@
       <!-- Projects -->
       <div class="background-beige">
         <div class="middle-container">
-          <div id="projects" class="projects-container">
+          <div id="projects-jp" class="projects-container">
             <h2 class="category-title-jp d-flex justify-content-center">
               プロジェクト
             </h2>
@@ -445,7 +463,7 @@
       <!-- Contact -->
       <div class="background-beige">
         <div class="middle-container">
-          <div id="contact" class="contact-container" >
+          <div id="contact-jp" class="contact-container" >
             <h2 class="category-title-jp text-center">
               連絡先
             </h2>

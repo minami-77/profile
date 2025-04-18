@@ -2,12 +2,11 @@ const buttonJp = document.querySelector('#btn-jp');
 const buttonEn = document.querySelector('#btn-en');
 const japanese = document.querySelector('.japanese');
 const english = document.querySelector('.english');
-const tabContact = document.querySelector('#tab-contact');
-const tabSkills = document.querySelector('#tab-skills');
-const tabProjects = document.querySelector('#tab-projects');
-// const contact = document.querySelector('#contact');
-// const skills = document.querySelector('#skills');
-// const projects = document.querySelector('#projects');
+const navJp = document.querySelector('#nav-jp');
+const navEn = document.querySelector('#nav-en');
+// const tabContact = document.querySelector('#tab-contact');
+// const tabSkills = document.querySelector('#tab-skills');
+// const tabProjects = document.querySelector('#tab-projects');
 
 // 日本語対応していない
 
@@ -20,6 +19,8 @@ buttonJp.addEventListener("click", (event) => {
   japanese.classList.remove("d-none");
   buttonJp.classList.add("active");
   buttonEn.classList.remove("active");
+  navJp.classList.remove("d-none");
+  navEn.classList.add("d-none");
   // ページ遷移
   // window.location.href = '/index_jp.html';
 })
@@ -31,31 +32,28 @@ buttonEn.addEventListener("click", (event) => {
   english.style.display = "block";
   buttonEn.classList.add("active");
   buttonJp.classList.remove("active");
-  // ページ遷移
-  // window.location.href = '/index_en.html';
+  navEn.classList.remove("d-none");
+  navJp.classList.add("d-none");
 })
 
-tabProfile.addEventListener("click", (event) => {
-  // event.preventDefault();
-  console.log("clicked");
-  tabContact.classList.add("active");
-  tabSkills.classList.remove("active");
-  tabProjects.classList.remove("active");
-})
+// tabProfile.addEventListener("click", (event) => {
+//   console.log("clicked");
+//   tabContact.classList.add("active");
+//   tabSkills.classList.remove("active");
+//   tabProjects.classList.remove("active");
+// })
 
 
-tabSkills.addEventListener("click", (event) => {
-  // event.preventDefault();
-  console.log("clicked");
-  tabContact.classList.remove("active");
-  tabSkills.classList.add("active");
-  tabProjects.classList.remove("active");
-})
+// tabSkills.addEventListener("click", (event) => {
+//   console.log("clicked");
+//   tabContact.classList.remove("active");
+//   tabSkills.classList.add("active");
+//   tabProjects.classList.remove("active");
+// })
 
-tabProjects.addEventListener("click", (event) => {
-  // event.preventDefault();
-  console.log("clicked");
-  tabContact.classList.remove("active");
-  tabSkills.classList.remove("active");
-  tabProjects.classList.add("active");
-})
+// tabProjects.addEventListener("click", (event) => {
+//   console.log("clicked");
+//   tabContact.classList.remove("active");
+//   tabSkills.classList.remove("active");
+//   tabProjects.classList.add("active");
+// })

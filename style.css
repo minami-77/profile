@@ -117,10 +117,16 @@ body {
   border-bottom: 3px solid transparent;
 }
 
+.tabs-underlined .tab-underlined-jp{
+  font-family: "Shippori Mincho", serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+/*
 .tabs-underlined .tab-underlined.active {
   opacity: 1;
   border-bottom: 3px solid rgb(84, 67, 53, 0.8);
-}
+} */
 
 /* Profile Banner */
 .background-banner {
@@ -183,7 +189,7 @@ body {
 }
 
 .blur-background{
-  background-color: rgba(255, 239, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
   box-shadow:
     inset 0px 0px 20px rgb(255, 0, 221, 0.2), /* 内側のシャドウ */
     0 0 20px rgba(88, 130, 145, 0.5); /* 外側のシャドウ */
@@ -197,7 +203,7 @@ body {
   font-family: "Charm", cursive;
   font-weight: bold;
   font-size: 1.5rem;
-  color: rgb(84, 67, 53);
+  color: rgb(88, 130, 145);
   padding-bottom: 1rem;
   text-shadow: 5px 5px 10px rgb(0,0,0,0.3);
   opacity: 0; /* 初期状態は非表示 */
@@ -209,9 +215,9 @@ body {
   font-family: "Shippori Mincho", serif;
   font-weight: bold;
   font-size: 1.5rem;
-  color: rgb(84, 67, 53);
+  color: rgb(88, 130, 145);
   padding-bottom: 1rem;
-  text-shadow: 5px 5px 10px rgb(0,0,0,0.2);
+  text-shadow: 5px 5px 10px rgb(0,0,0,0.3);
   opacity: 0; /* 初期状態は非表示 */
   animation: fadein 2s ease-in forwards;
   animation-delay: 2s;
@@ -222,22 +228,32 @@ body {
   color: rgb(84, 67, 53);
   font-family: "Uchen", serif;
   font-size: 1.2rem;
-  text-shadow: 1px 1px 5px rgb(0,0,0,0.3);
+  text-shadow: 1px 1px 5px rgb(0,0,0,0.1);
   margin: 0px;
   opacity: 0; /* 初期状態は非表示 */
   animation: fadein 2s ease-in forwards;
   animation-delay: 2s;
 }
 
+.eng-brown strong{
+  font-family: "Nunito", sans-serif;
+}
+
 .jp-brown{
   color: rgb(84, 67, 53);
   font-family: "Klee One", cursive;
+  font-weight: 500;
   font-size: 1.2rem;
-  text-shadow: 1px 1px 3px rgb(0,0,0,0.2);
+  text-shadow: 5px 5px 10px rgb(0,0,0,0.3);
   margin: 0px;
   opacity: 0; /* 初期状態は非表示 */
   animation: fadein 2s ease-in forwards;
   animation-delay: 2s;
+}
+
+.jp-brown strong{
+  font-weight: 400;
+  font-family: "Kosugi Maru", sans-serif;
 }
 
 .img-circle {
@@ -274,9 +290,9 @@ body {
 .category-title-jp {
   font-family: "Shippori Mincho", serif;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: rgb(84, 67, 53);
-  text-shadow: 5px 5px 10px rgb(0,0,0,0.5);
+  text-shadow: 5px 5px 10px rgb(0,0,0,0.3);
   padding: 1rem;
 }
 
@@ -304,7 +320,7 @@ body {
 .skill-img-container{
   margin: 1rem;
   padding: 1rem;
-  background-color: rgba(255, 239, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
   box-shadow:
     inset 0px 0px 20px rgb(255, 0, 221, 0.2), /* 内側のシャドウ */
     0 0 20px rgba(88, 130, 145, 0.5); /* 外側のシャドウ */
@@ -329,7 +345,7 @@ body {
 }
 
 .card-brown {
-  background-color: rgba(255, 239, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   box-shadow:
     inset 0px 0px 20px rgb(255, 0, 221, 0.2), /* 内側のシャドウ */
     0 0 20px rgba(88, 130, 145, 0.5); /* 外側のシャドウ */
@@ -353,7 +369,7 @@ body {
 
 .project-link{
   background-color:rgb(104, 94, 86, 0.8);
-  box-shadow: 0px 0px 30px rgb(255, 0, 221, 0.2);
+  box-shadow: 0px 0px 10px rgb(0,0,0,0.3);
   text-shadow: 0px 0px 10px rgb(0,0,0,0.3);
   padding: 0.5rem;
   display: inline;
@@ -390,14 +406,15 @@ a {
 .card-text {
   color: rgb(84, 67, 53);
   font-family: "Uchen", serif;
+  text-shadow: 1px 1px 5px rgb(0,0,0,0.1);
   font-weight: 400;
   font-size: 1.2rem;
   margin: 0px;
 }
 
-
 .card-text-jp {
   color: rgb(84, 67, 53);
+  text-shadow: 1px 1px 5px rgb(0,0,0,0.1);
   font-family: "Shippori Mincho", serif;
   font-weight: 400;
   font-size: 1.2rem;
@@ -406,12 +423,14 @@ a {
 
 .small-text{
   color: rgb(84, 67, 53);
+  text-shadow: 1px 1px 5px rgb(0,0,0,0.1);
   font-size: 1rem;
   font-family: "Uchen", serif;
 }
 
 .small-text-jp{
   color: rgb(84, 67, 53);
+  text-shadow: 1px 1px 5px rgb(0,0,0,0.1);
   font-size: 1rem;
   font-family: "Shippori Mincho", serif;
 }
@@ -422,7 +441,6 @@ a {
 
 .devicon{
   font-size: 1.5rem;
-  /* color:rgb(84, 67, 53); */
   color:rgb(88, 130, 145);
   /* text-shadow: 0px 0px 10px rgb(0,0,0,0.3); */
 }
@@ -459,16 +477,13 @@ a {
 .icon-brown {
   font-size: 2.5rem;
   color:rgb(104, 94, 86, 0.8);
-  /* color: rgb(116, 170, 188); */
-  /* text-shadow: 5px 5px 10px rgb(0,0,0,0.5); */
-  text-shadow: 0px 0px 30px rgb(255, 0, 221, 0.2);
+  text-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
   margin: 0px 2rem;
 }
 
 .icon-brown:hover{
   color: rgb(255, 0, 221, 0.4);
   text-shadow: 0px 0px 30px rgb(255, 0, 221, 0.3);
-  /* text-shadow: 5px 5px 10px rgb(44, 89, 104); */
 }
 
 /* Footer */
