@@ -4,13 +4,7 @@ const japanese = document.querySelector('.japanese');
 const english = document.querySelector('.english');
 const navJp = document.querySelector('#nav-jp');
 const navEn = document.querySelector('#nav-en');
-// const tabContact = document.querySelector('#tab-contact');
-// const tabSkills = document.querySelector('#tab-skills');
-// const tabProjects = document.querySelector('#tab-projects');
-
-// 日本語対応していない
-
-
+const logoLink = document.getElementById("tab-profile");
 
 buttonJp.addEventListener("click", (event) => {
   event.preventDefault();
@@ -21,7 +15,8 @@ buttonJp.addEventListener("click", (event) => {
   buttonEn.classList.remove("active");
   navJp.classList.remove("d-none");
   navEn.classList.add("d-none");
-  // ページ遷移
+  logoLink.setAttribute("href", "#top-jp");
+  // ページ遷移の場合
   // window.location.href = '/index_jp.html';
 })
 
@@ -34,26 +29,5 @@ buttonEn.addEventListener("click", (event) => {
   buttonJp.classList.remove("active");
   navEn.classList.remove("d-none");
   navJp.classList.add("d-none");
+  logoLink.setAttribute("href", "#top");
 })
-
-// tabProfile.addEventListener("click", (event) => {
-//   console.log("clicked");
-//   tabContact.classList.add("active");
-//   tabSkills.classList.remove("active");
-//   tabProjects.classList.remove("active");
-// })
-
-
-// tabSkills.addEventListener("click", (event) => {
-//   console.log("clicked");
-//   tabContact.classList.remove("active");
-//   tabSkills.classList.add("active");
-//   tabProjects.classList.remove("active");
-// })
-
-// tabProjects.addEventListener("click", (event) => {
-//   console.log("clicked");
-//   tabContact.classList.remove("active");
-//   tabSkills.classList.remove("active");
-//   tabProjects.classList.add("active");
-// })
