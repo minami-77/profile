@@ -423,6 +423,7 @@ body {
 
 .card-text-jp strong{
   font-family: "Kosugi Maru", sans-serif;
+  text-shadow: 1px 1px 10px rgb(0,0,0,0.1);
 }
 
 .small-text{
