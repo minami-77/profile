@@ -182,7 +182,7 @@ body {
   font-style: normal;
   text-shadow: 5px 5px 10px rgb(44, 89, 104);
   padding: 2rem;
-  margin-bottom: 1rem;
+
   /* animation@keyframe:silidein */
   animation-duration: 2s;
   animation-name: slidein;
@@ -196,7 +196,7 @@ body {
   font-weight: bold !important;
   text-shadow: 5px 5px 10px rgb(44, 89, 104);
   padding: 1rem;
-  margin-bottom: 1rem;
+
   /* animation@keyframe:silidein */
   animation-duration: 2s;
   animation-name: slidein;
@@ -212,13 +212,16 @@ body {
 }
 
 .blur-background{
+  max-width: 1000px;
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow:
     inset 0px 0px 20px rgb(255, 0, 221, 0.2), /* 内側のシャドウ */
     0 0 20px rgba(88, 130, 145, 0.5); /* 外側のシャドウ */
-  padding: 1rem;
+  padding: 2rem;
+  border-radius: 20px;
   opacity: 0; /* 初期状態は非表示 */
-  margin-bottom: 1rem;
+  margin: 0 auto;
+
   /* animation@keyframe:fadein */
   animation: fadein 2s ease-in forwards;
   animation-delay: 2s;
@@ -227,7 +230,7 @@ body {
 .large-eng-blue{
   font-family: "Charm", cursive;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: rgb(88, 130, 145);
   padding-bottom: 1rem;
   text-shadow: 5px 5px 10px rgb(0,0,0,0.3);
@@ -240,7 +243,7 @@ body {
 .large-jp-blue{
   font-family: "Shippori Mincho", serif;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: rgb(88, 130, 145);
   padding-bottom: 1rem;
   text-shadow: 5px 5px 10px rgb(0,0,0,0.3);
@@ -357,6 +360,7 @@ body {
 .skill-img-container{
   margin: 1rem;
   padding: 1rem;
+  border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow:
     inset 0px 0px 20px rgb(255, 0, 221, 0.2), /* 内側のシャドウ */
@@ -388,6 +392,7 @@ body {
     0 0 20px rgba(88, 130, 145, 0.5); /* 外側のシャドウ */
   margin: 1rem;
   padding: 1rem;
+  border-radius: 20px;
 }
 
 .card-brown h2 {
