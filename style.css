@@ -3,6 +3,16 @@
   .container {
     width: 700px;
   }
+   /* for folding contents of navbar  */
+  .navbar-collapse{
+    background-color: rgb(255,255,255,0.7);
+    color: white;
+    margin: 0px !important;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 999;
+  }
 }
 
 @media (max-width: 720px) {
@@ -314,7 +324,7 @@ body {
 /* Common components */
 .background-white{
   width: 100%;
-  background:linear-gradient( rgba(153, 214, 236, 0.4), rgba(153, 214, 236, 0.6));
+  background:linear-gradient( rgba(153, 214, 236, 0.6), rgba(153, 214, 236, 0.3));
 }
 
 .middle-container {
@@ -340,83 +350,41 @@ body {
   padding: 1rem;
 }
 
-/* Skills */
-.my-skill-container{
-  padding: 3rem 0rem;
-}
-
-.eng-blue{
-  color:rgb(88, 130, 145);
-  text-shadow: 5px 5px 10px rgb(0,0,0,0.3);
-  font-size: 1.5rem;
-  font-family: "Charm", cursive;
-  font-weight: bold;
-}
-
-.jp-blue{
-  font-family: "Shippori Mincho", serif;
-  color:rgb(88, 130, 145);
-  text-shadow: 1px 1px 10px rgb(0,0,0,0.3);
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.skill-img-container{
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.6);
-  box-shadow:
-    inset 0px 0px 20px rgb(255, 0, 221, 0.2), /* 内側のシャドウ */
-    0 0 20px rgba(88, 130, 145, 0.5); /* 外側のシャドウ */
-}
-
-.skill-category{
-  padding: 1rem 0rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.skill-img{
-  width: 3rem;
-  height: auto;
-  margin: 0.5rem;
-}
-
 /* Projects */
 .projects-container{
   padding: 3rem 0rem 2rem 0rem;
 }
 
-.card-brown {
-  background-color: rgba(255, 255, 255, 0.6);
+.card-project {
+  background-color: rgba(255, 255, 255, 0.3);
   box-shadow:
-    inset 0px 0px 20px rgb(255, 0, 221, 0.2), /* 内側のシャドウ */
-    0 0 20px rgba(88, 130, 145, 0.5); /* 外側のシャドウ */
-  margin: 1rem;
-  padding: 1rem;
+    inset 0px 0px 20px rgba(255, 255, 255, 0.5), /* 内側のシャドウ */
+    0 0 20px rgba(38, 75, 89, 0.5); /* 外側のシャドウ */
+  margin: 1.5rem;
+  padding: 1.5rem;
   border-radius: 20px;
 }
 
-.card-brown h2 {
-  color: white;
-  background-color:rgb(88, 130, 145);
-  border: 3px solid rgb(255,255,255);
+.card-project h2 {
+  color: rgb(88, 130, 145);
+  /* background-color:white; */
+  /* border: 5px solid rgb(255,255,255); */
   font-family: "Charm", cursive;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   text-align: center;
   margin: 0rem;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
-.card-brown img {
-  border: 3px solid rgb(255,255,255);
+.card-project img {
+  /* border: 5px solid white; */
   width: 100%;
-  height: 240px;
+  height: 20rem;
+  border-radius: 15px;
   object-fit: cover;
+  padding: 0.5rem;
 }
 
 .card-text {
@@ -494,6 +462,50 @@ a {
   font-size: 1rem;
   color: white;
   }
+
+  /* Skills */
+.my-skill-container{
+  padding: 3rem 0rem;
+}
+
+.eng-blue{
+  color:rgb(88, 130, 145);
+  text-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+  font-size: 1.5rem;
+  font-family: "Charm", cursive;
+  font-weight: bold;
+}
+
+.jp-blue{
+  font-family: "Shippori Mincho", serif;
+  color:rgb(88, 130, 145);
+  text-shadow: 1px 1px 10px rgb(0,0,0,0.3);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.skill-img-container{
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow:
+    inset 0px 0px 20px rgb(255, 0, 221, 0.2), /* 内側のシャドウ */
+    0 0 20px rgba(88, 130, 145, 0.5); /* 外側のシャドウ */
+}
+
+.skill-category{
+  padding: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill-img{
+  width: 3rem;
+  height: auto;
+  margin: 0.5rem;
+}
 
 /* back-to-top button at bottom */
 .back-to-top {
