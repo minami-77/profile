@@ -121,6 +121,7 @@ body {
   margin: 1rem;
   display: flex;
   align-items: center;
+  justify-content: end;
   color: rgb(88, 130, 145, 0.8);
 }
 
