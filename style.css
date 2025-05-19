@@ -367,8 +367,6 @@ body {
 
 .card-project h2 {
   color: rgb(88, 130, 145);
-  /* background-color:white; */
-  /* border: 5px solid rgb(255,255,255); */
   font-family: "Charm", cursive;
   font-size: 2rem;
   font-weight: bold;
@@ -381,12 +379,24 @@ body {
 .card-project img {
   border: 0.5rem solid white;
   width: 100%;
-  height: 20rem;
+  height: 22em;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   object-fit: cover;
   margin-bottom: 1.5rem;
 }
+
+.video-container video{
+  border: 0.5rem solid white;
+  width: 100%;
+  height: 22rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  object-fit:contain;
+  margin-bottom: 1.5rem;
+}
+
+
 
 .card-text {
   color: rgb(84, 67, 53);
@@ -430,7 +440,7 @@ body {
 }
 
 .devicon{
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color:rgb(88, 130, 145);
 }
 
@@ -510,9 +520,9 @@ a {
 }
 
 .skill-img{
-  width: 3rem;
+  width: 4rem;
   height: auto;
-  margin: 0.5rem;
+  margin: 0.75rem;
 }
 
 /* back-to-top button at bottom */
