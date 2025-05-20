@@ -30,60 +30,54 @@
 
   <body>
     <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <!-- Logo -->
-            <!-- <div class="container"> -->
-              <a class ="navbar-brand" id="tab-profile"><img src="./images/logo_m_br.png" class="img-square"></a>
-            <!-- </div> -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class ="navbar-brand" id="tab-profile"><img src="./images/logo_m_br.png" class="img-square"></a>
+        <!-- Language -->
+        <div class="btn-container ms-auto">
+          <i class="devicon fa-solid fa-globe px-2"></i>
+          <button id="btn-en" class="btn-lang active">
+            EN
+          </button>
+            |
+          <button id="btn-jp" class="btn-lang">
+            JP
+          </button>
+        </div>
+        <!-- toggle icon -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- Language -->
-            <div class="btn-container ms-auto">
-              <i class="devicon fa-solid fa-globe px-2"></i>
-              <button id="btn-en" class="btn-lang active">
-                EN
-              </button>
-              |
-              <button id="btn-jp" class="btn-lang">
-                JP
-              </button>
-            </div>
-
-            <!-- toggle icon -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse tabs-container" id="navbarSupportedContent">
-              <!-- EN Navbar contents (fold smaller than md)-->
-              <ul id="nav-en" class="navbar-nav list-inline tabs">
-                <li class="nav-item">
-                  <a href="#projects" id="tab-projects" class="nav-link tab">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#skills" id="tab-skills" class="nav-link tab">Skills</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#contact" id="tab-contact" class="nav-link tab">Contact</a>
-                </li>
-              </ul>
-
-                <!-- JP Navbar contents (fold smaller than md)-->
-              <ul id="nav-jp" class="navbar-nav list-inline tabs d-none">
-                <li class="nav-item">
-                  <a href="#projects-jp" id="tab-projects-jp" class="nav-link tab-jp">プロジェクト</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#skills-jp" id="tab-skills-jp" class="nav-link tab-jp">スキル</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#contact" id="tab-contact" class="nav-link tab-jp">連絡先</a>
-                </li>
-              </ul>
-
-            </div>
-          </div>
-        </nav>
+        <div class="collapse navbar-collapse tabs-container" id="navbarSupportedContent">
+          <!-- EN Navbar contents (fold smaller than md)-->
+          <ul id="nav-en" class="navbar-nav list-inline tabs">
+            <li class="nav-item">
+              <a href="#projects" id="tab-projects" class="nav-link tab">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" id="tab-skills" class="nav-link tab">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" id="tab-contact" class="nav-link tab">Contact</a>
+            </li>
+          </ul>
+          <!-- JP Navbar contents (fold smaller than md)-->
+          <ul id="nav-jp" class="navbar-nav list-inline tabs d-none">
+            <li class="nav-item">
+              <a href="#projects-jp" id="tab-projects-jp" class="nav-link tab-jp">プロジェクト</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills-jp" id="tab-skills-jp" class="nav-link tab-jp">スキル</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" id="tab-contact" class="nav-link tab-jp">連絡先</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
 <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 
@@ -95,10 +89,12 @@
           <h2 class="large-eng-blue text-center">
             Software Engineer
           </h2>
+
           <div class="row blur-background">
             <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
               <img src="images/20250307_DemoDay-24-face.JPG" class="img-circle">
             </div>
+
             <div class="col-12 col-lg-8 d-flex justify-content-center align-items-center">
               <p class="eng-brown text-center">
                 Hi, I'm Minami from Japan!
@@ -121,13 +117,39 @@
               Projects
             </h2>
             <div class="row">
+              <!-- Eventerate -->
               <div class="col-12 col-lg-6">
                 <div class="card-project">
                   <div>
-                    <img src="images/eventerate.png" class="card-img-top" alt="eventerate-img">
-
+                    <!-- Carousel -->
+                    <div id="carouselEventerateIndicators" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselEventerateIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselEventerateIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselEventerateIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./images/eventerate1.png" class="card-img-top" alt="eventerate-img1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./images/eventerate2.png" class="card-img-top" alt="eventerate-img2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./images/eventerate3.png" class="card-img-top" alt="eventerate-img3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselEventerateIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselEventerateIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <!-- link -->
                     <div class="link-container text-center">
-
                       <div class="project-link">
                         <a href="https://www.eventerate.com/" target="_blank">
                           <span class="link-text"> Website</span>
@@ -146,10 +168,9 @@
                           <i class="link-icon fa-brands fa-youtube"></i>
                         </a>
                       </div>
-
                     </div>
                   </div>
-
+                  <!-- description -->
                   <div class="card-body m-2">
                     <h2 class="lightblue">Eventerate</h2>
                     <p class="card-text">
@@ -158,7 +179,7 @@
                       The app also offers <strong>collaboration tools</strong> that make it easy for multiple users to work together on event creation.
                     </p>
                     <p class="small-text py-1">(Collaborators: Cindy, Alex, Allan)</p>
-
+                    <!-- devicon -->
                     <div class="devicon-container text-center">
                       <i class="devicon devicon-html5-plain"></i>
                       <i class="devicon devicon-sass-original"></i>
@@ -168,15 +189,42 @@
                       <i class="devicon devicon-postgresql-plain"></i>
                       <i class="devicon devicon-heroku-original"></i>
                     </div>
-
                   </div>
                 </div>
               </div>
+
+              <!-- GameSwap -->
               <div class="col-12 col-lg-6">
                 <div class= "card-project">
                   <div>
-                    <img src="images/gameswap.png" class="card-img-top" alt="gameswap-img">
-
+                    <!-- Carousel -->
+                    <div id="carouselGameSwapIndicators" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselGameSwapIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselGameSwapIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselGameSwapIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./images/gameswap1.png" class="card-img-top" alt="gamaswap-img1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./images/gameswap2.png" class="card-img-top" alt="gameswap-img2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./images/gameswap3.png" class="card-img-top" alt="gameswap-img3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselGameSwapIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselGameSwapIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <!-- link -->
                     <div class="link-container text-center">
                       <div class="project-link">
                         <a href="https://game-swap-e551a983a6f1.herokuapp.com/" target="_blank">
@@ -191,9 +239,8 @@
                         </a>
                       </div>
                     </div>
-
                   </div>
-
+                  <!-- description -->
                   <div class="card-body m-2">
                     <h2 class="lightblue">Game Swap</h2>
                     <p class="card-text">
@@ -203,7 +250,7 @@
                       The platform also allows borrowers to <strong>leave reviews</strong> after the rental is complete, promoting a trustworthy community.
                     </p>
                     <p class="small-text py-2">(Collaborators: Cindy, Alex, Allan)</p>
-
+                    <!-- devicon -->
                     <div class="devicon-container text-center">
                       <i class="devicon devicon-html5-plain"></i>
                       <i class="devicon devicon-sass-original"></i>
@@ -217,16 +264,18 @@
                 </div>
               </div>
 
+              <!-- ScoreMatchXO -->
               <div class="col-12 col-lg-6">
                 <div class= "card-project">
                   <div>
+                    <!-- video -->
                     <div class="video-container">
                       <video controls>
                         <source src="./videos/score_match_xo_screenmovie.mp4" type="video/mp4" class="card-img-top" alt="scorematch-xo-img">
                         Your browser does not support the video tag.
                       </video>
                     </div>
-
+                    <!-- link -->
                     <div class="link-container text-center">
                       <div class="project-link">
                         <a href="https://idyllic-lily-bac92f.netlify.app/" target="_blank">
@@ -241,9 +290,8 @@
                         </a>
                       </div>
                     </div>
-
                   </div>
-
+                  <!-- description -->
                   <div class="card-body m-2">
                     <h2 class="lightblue">Score Match XO</h2>
                     <p class="card-text">
@@ -251,8 +299,7 @@
                       The player with the highest total score wins.
                       Matching three in a row—vertically, horizontally, or diagonally—gives a 30-point bonus.
                     </p>
-                    <!-- <p class="small-text py-2">(Collaborators:)</p> -->
-
+                    <!-- devicon -->
                     <div class="devicon-container text-center">
                       <i class="devicon devicon-html5-plain"></i>
                       <i class="devicon devicon-css3-plain"></i>
@@ -279,46 +326,45 @@
 
             <div class="container">
               <div class="row">
-
+                <!-- Frontend -->
                 <div class="col-12 col-md-4 mb-3">
                 <div class="skill-img-container">
                   <h3 class="eng-blue text-center">Frontend</h3>
-                  <div class="skill-category  d-flex flex-wrap justify-content-center">
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+                    <div class="skill-category  d-flex flex-wrap justify-content-center">
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+                    </div>
                   </div>
                 </div>
-                </div>
-
+                <!-- Backend -->
                 <div class="col-12 col-md-4 mb-3">
-                <div class="skill-img-container">
-                  <h3 class="eng-blue text-center">Backend</h3>
-                  <div class="skill-category  d-flex flex-wrap justify-content-center">
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original-wordmark.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+                  <div class="skill-img-container">
+                    <h3 class="eng-blue text-center">Backend</h3>
+                    <div class="skill-category  d-flex flex-wrap justify-content-center">
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original-wordmark.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+                    </div>
                   </div>
                 </div>
-                </div>
-
+                <!-- Tools -->
                 <div class="col-12 col-md-4 mb-3">
-                <div class="skill-img-container">
-                  <h3 class="eng-blue text-center">Tools</h3>
-                  <div class="skill-category  d-flex flex-wrap justify-content-center">
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-original-wordmark.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original-wordmark.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" />
-
+                  <div class="skill-img-container">
+                    <h3 class="eng-blue text-center">Tools</h3>
+                    <div class="skill-category  d-flex flex-wrap justify-content-center">
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-original-wordmark.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original-wordmark.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" />
+                    </div>
                   </div>
-                </div>
                 </div>
               </div>
             </div>
@@ -326,10 +372,9 @@
           </div>
         </div>
       </div>
+      <!-- BackToTop -->
+      <a href="#top" class="back-to-top text-center">↑</a>
 
-          <a href="#top" class="back-to-top text-center">↑</a>
-        </div>
-      </div>
     </div>
 
 <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
@@ -370,11 +415,41 @@
               プロジェクト
             </h2>
             <div class="row">
+
+              <!-- イベントレイト -->
               <div class="col-12 col-lg-6">
                 <div class="card-project">
                   <div>
-                    <img src="images/eventerate.png" class="card-img-top" alt="eventerate-img">
+                    <!-- <img src="images/eventerate.png" class="card-img-top" alt="eventerate-img"> -->
+                    <!-- Carousel -->
+                    <div id="carouselEventerateJPIndicators" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselEventerateJPIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselEventerateJPIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselEventerateJPIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./images/eventerate1.png" class="card-img-top" alt="eventerate-img1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./images/eventerate2.png" class="card-img-top" alt="eventerate-img2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./images/eventerate3.png" class="card-img-top" alt="eventerate-img3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselEventerateJPIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselEventerateJPIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
 
+                    <!-- リンク -->
                     <div class="link-container text-center">
                       <div class="project-link">
                         <a href="https://www.eventerate.com/" target="_blank">
@@ -396,7 +471,7 @@
                       </div>
                     </div>
                   </div>
-
+                  <!-- 概要 -->
                   <div class="card-body m-2">
                     <h2 class="lightblue">Eventerate</h2>
                     <p class="card-text-jp">
@@ -405,7 +480,7 @@
                     </p>
                     <p class="small-text-jp">※英語のみ</p>
                     <p class="small-text-jp">(共同製作者: Cindy, Alex, Allan)</p>
-
+                    <!-- アイコン -->
                     <div class="devicon-container text-center">
                       <i class="devicon devicon-html5-plain"></i>
                       <i class="devicon devicon-sass-original"></i>
@@ -415,14 +490,43 @@
                       <i class="devicon devicon-postgresql-plain"></i>
                       <i class="devicon devicon-heroku-original"></i>
                     </div>
-
                   </div>
                 </div>
               </div>
+
+              <!-- ゲームスワップ -->
               <div class="col-12 col-lg-6">
                 <div class= "card-project">
                   <div>
-                    <img src="images/gameswap.png" class="card-img-top" alt="gameswap-img">
+                    <!-- <img src="images/gameswap.png" class="card-img-top" alt="gameswap-img"> -->
+                    <!-- Carousel -->
+                    <div id="carouselGameSwapJPIndicators" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselGameSwapJPIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselGameSwapJPIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselGameSwapJPIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./images/gameswap1.png" class="card-img-top" alt="gamaswap-img1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./images/gameswap2.png" class="card-img-top" alt="gameswap-img2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./images/gameswap3.png" class="card-img-top" alt="gameswap-img3">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselGameSwapJPIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselGameSwapJPIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <!-- リンク -->
                     <div class="link-container text-center">
                       <div class="project-link">
                         <a href="https://game-swap-e551a983a6f1.herokuapp.com/" target="_blank">
@@ -438,6 +542,7 @@
                       </div>
                     </div>
                   </div>
+                  <!-- 概要 -->
                   <div class="card-body m-2">
                     <h2 class="lightblue">Game Swap</h2>
                     <p class="card-text-jp">
@@ -447,7 +552,7 @@
                     </p>
                     <p class="small-text-jp">※英語のみ</p>
                     <p class="small-text-jp">(共同製作者: Cindy, Alex, Allan)</p>
-
+                    <!-- アイコン -->
                     <div class="devicon-container text-center">
                       <i class="devicon devicon-html5-plain"></i>
                       <i class="devicon devicon-sass-original"></i>
@@ -457,21 +562,22 @@
                       <i class="devicon devicon-postgresql-plain"></i>
                       <i class="devicon devicon-heroku-original"></i>
                     </div>
-
                   </div>
                 </div>
               </div>
 
+              <!-- スコアマッチＸＯ -->
               <div class="col-12 col-lg-6">
                 <div class= "card-project">
                   <div>
+                    <!-- 動画 -->
                     <div class="video-container">
                       <video controls>
                         <source src="./videos/score_match_xo_screenmovie.mp4" type="video/mp4" class="card-img-top" alt="scorematch-xo-img">
                         Your browser does not support the video tag.
                       </video>
                     </div>
-
+                    <!-- リンク -->
                     <div class="link-container text-center">
                       <div class="project-link">
                         <a href="https://idyllic-lily-bac92f.netlify.app/" target="_blank">
@@ -486,9 +592,8 @@
                         </a>
                       </div>
                     </div>
-
                   </div>
-
+                  <!-- 概要 -->
                   <div class="card-body m-2">
                     <h2 class="lightblue">Score Match XO</h2>
                     <p class="card-text">
@@ -496,8 +601,7 @@
                       合計スコアが高いプレイヤーが勝利します。
                       縦・横・斜めに3つ並べると、30ポイントのボーナスがもらえます。
                     </p>
-                    <!-- <p class="small-text py-2">(Collaborators:)</p> -->
-
+                    <!-- アイコン -->
                     <div class="devicon-container text-center">
                       <i class="devicon devicon-html5-plain"></i>
                       <i class="devicon devicon-css3-plain"></i>
@@ -523,44 +627,45 @@
             </h2>
             <div class="container">
               <div class="row">
+                <!-- フロントエンド -->
                 <div class="col-12 col-md-4 mb-3">
-                <div class="skill-img-container">
-                  <h3 class="jp-blue text-center">フロントエンド</h3>
-                  <div class="skill-category  d-flex flex-wrap justify-content-center">
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+                  <div class="skill-img-container">
+                    <h3 class="jp-blue text-center">フロントエンド</h3>
+                    <div class="skill-category  d-flex flex-wrap justify-content-center">
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+                    </div>
                   </div>
                 </div>
-                </div>
-
+                <!-- バックエンド -->
                 <div class="col-12 col-md-4 mb-3">
-                <div class="skill-img-container">
-                  <h3 class="jp-blue text-center">バックエンド</h3>
-                  <div class="skill-category  d-flex flex-wrap justify-content-center">
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original-wordmark.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+                  <div class="skill-img-container">
+                    <h3 class="jp-blue text-center">バックエンド</h3>
+                    <div class="skill-category  d-flex flex-wrap justify-content-center">
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original-wordmark.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+                    </div>
                   </div>
                 </div>
-                </div>
-
+                <!-- ツール -->
                 <div class="col-12 col-md-4 mb-3">
-                <div class="skill-img-container">
-                  <h3 class="jp-blue text-center">ツール</h3>
-                  <div class="skill-category  d-flex flex-wrap justify-content-center">
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-original-wordmark.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original-wordmark.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
-                    <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" />
+                  <div class="skill-img-container">
+                    <h3 class="jp-blue text-center">ツール</h3>
+                    <div class="skill-category  d-flex flex-wrap justify-content-center">
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-original-wordmark.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original-wordmark.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                      <img class="skill-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" />
+                    </div>
                   </div>
-                </div>
                 </div>
               </div>
             </div>
@@ -568,11 +673,10 @@
           </div>
         </div>
       </div>
-
-          <a href="#top-jp" class="back-to-top text-center">↑</a>
-        </div>
-      </div>
+      <!-- ページ上部へ -->
+      <a href="#top-jp" class="back-to-top text-center">↑</a>
     </div>
+
 <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
