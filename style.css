@@ -447,6 +447,9 @@ body {
 /* Project link */
 .link-container{
   margin: 0.5rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-link{
