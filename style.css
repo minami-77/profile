@@ -549,13 +549,12 @@ a {
 }
 
 /* Contact */
-.contact-container{
+.contact-container h2{
   color: rgb(255,255,255,0.8);
   font-family: "Charm", cursive;
   font-weight: bold;
   font-size: 2rem;
-  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.7);
-
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
 }
 
 .contact-links {
