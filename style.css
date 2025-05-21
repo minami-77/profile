@@ -446,6 +446,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .project-link{
@@ -457,6 +458,7 @@ body {
   display: inline;
   margin: 1rem !important;
   transition:all 0.2s;
+  white-space: nowrap;
 }
 
 .project-link:hover{
